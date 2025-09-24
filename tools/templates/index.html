@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page_title %}{{ page_title }}{% else %}NovelVibe - Free Novels for Women{% endif %}</title>
+    <title>{% if page_title %}{{ page_title }}{% else %}GoodLuckArk - Free Novels for Women{% endif %}</title>
     <meta name="description" content="{% if page_description %}{{ page_description }}{% else %}Discover thousands of free werewolf romance novels. Read passionate alpha stories, mate bonds, and pack adventures. Perfect for women who love paranormal romance.{% endif %}">
     <meta name="keywords" content="free werewolf novels, alpha romance, mate bond stories, paranormal romance, werewolf fiction, free books for women">
     
@@ -16,7 +16,7 @@
     {% endif %}
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="{% if page_title %}{{ page_title }}{% else %}NovelVibe - Free Novels for Women{% endif %}">
+    <meta property="og:title" content="{% if page_title %}{{ page_title }}{% else %}GoodLuckArk - Free Novels for Women{% endif %}">
     <meta property="og:description" content="{% if page_description %}{{ page_description }}{% else %}Discover thousands of free werewolf romance novels{% endif %}">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ canonical_url }}">
@@ -24,7 +24,7 @@
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="{% if page_title %}{{ page_title }}{% else %}NovelVibe{% endif %}">
+    <meta name="twitter:title" content="{% if page_title %}{{ page_title }}{% else %}GoodLuckArk{% endif %}">
     <meta name="twitter:description" content="{% if page_description %}{{ page_description }}{% else %}Free werewolf romance novels{% endif %}">
     
     <!-- Canonical URL -->
@@ -47,15 +47,17 @@
     <style>
         :root {
             --primary-color: #ff6b6b;
-            --secondary-color: #9c89b8;
-            --background-color: #f8f9fa;
-            --card-bg-color: #ffffff;
-            --text-color: #333333;
-            --light-text: #6c757d;
-            --shadow-color: rgba(0, 0, 0, 0.1);
-            --hover-shadow: rgba(0, 0, 0, 0.15);
-            --footer-bg: #343a40;
-            --footer-text: #f8f9fa;
+            --secondary-color: #bb86fc;
+            --background-color: #121212;
+            --card-bg-color: #1e1e1e;
+            --text-color: #ffffff;
+            --light-text: #b3b3b3;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --hover-shadow: rgba(0, 0, 0, 0.4);
+            --footer-bg: #0d1117;
+            --footer-text: #f0f6fc;
+            --border-color: #30363d;
+            --input-bg: #21262d;
         }
 
         * {
@@ -110,18 +112,24 @@
 
         .search-box input {
             padding: 8px 12px 8px 35px;
-            border: 1px solid #ddd;
+            border: 1px solid var(--border-color);
             border-radius: 30px;
             font-size: 0.85rem;
             width: 220px;
             transition: all 0.3s;
+            background-color: var(--input-bg);
+            color: var(--text-color);
         }
 
         .search-box input:focus {
             outline: none;
             border-color: var(--secondary-color);
-            box-shadow: 0 0 0 2px rgba(156, 137, 184, 0.2);
+            box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.2);
             width: 250px;
+        }
+
+        .search-box input::placeholder {
+            color: var(--light-text);
         }
 
         .search-box i {
@@ -310,7 +318,7 @@
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -318,8 +326,8 @@
 
         .read-more-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.4);
-            background: linear-gradient(135deg, #ff5252, #8e7cc3);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+            background: linear-gradient(135deg, #ff5252, #bb86fc);
         }
 
         .read-more-button:active {
@@ -327,14 +335,14 @@
         }
 
         .read-more-button:disabled {
-            background: #ccc;
+            background: var(--border-color);
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
         }
 
         #load-more-btn:hover {
-            background-color: #654321 !important;
+            background-color: var(--secondary-color) !important;
         }
 
         .update-date {
@@ -744,8 +752,8 @@
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <div class="footer-logo">NovelVibe</div>
-                <p>NovelVibe offers a wide selection of free novels for women. Discover new stories across various genres and enjoy reading anywhere, anytime.</p>
+                <div class="footer-logo">GoodLuckArk</div>
+                <p>GoodLuckArk offers a wide selection of free novels for women. Discover new stories across various genres and enjoy reading anywhere, anytime.</p>
             </div>
             
             <div class="footer-links">
@@ -780,7 +788,7 @@
         </div>
         
         <div class="copyright">
-            <p>&copy; 2024 NovelVibe. All rights reserved.</p>
+            <p>&copy; 2024 GoodLuckArk. All rights reserved.</p>
         </div>
     </footer>
 

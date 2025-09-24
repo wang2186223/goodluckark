@@ -316,26 +316,34 @@ class WebsiteBuilder:
         # 准备小说数据
         novel_list = list(novels.values())
         
-        # 按最后更新时间排序
-        novel_list.sort(key=lambda x: x.get('last_updated', ''), reverse=True)
+        # 新的排序策略：按章节数和评分的综合分数排序
+        def calculate_score(novel):
+            chapters = novel.get('total_chapters', 0)
+            rating = novel.get('rating', 0)
+            return (chapters * 0.3) + (rating * 0.7)
         
-        # 准备不同分类的小说
-        # Featured Novels: 从整个小说库中真正随机选择5本（或全部，如果小说总数少于5本）
-        featured_count = min(5, len(novel_list))  # 确保不超过实际小说数量
-        if len(novel_list) > 0:
-            featured_novels = self.prepare_novel_cards(random.sample(novel_list, featured_count))
-        else:
-            featured_novels = []
+        novel_list.sort(key=calculate_score, reverse=True)
         
-        new_novels = self.prepare_novel_cards(novel_list[:12])      # 最新12本
-        popular_novels = self.prepare_novel_cards(novel_list[:12])  # 热门12本（暂时用最新的）
+        # 新的选择策略 - 不同于之前的随机选择
+        total_novels = len(novel_list)
         
-        # 推荐小说：随机选择8本作为默认显示
-        recommended_count = min(8, len(novel_list))
-        if len(novel_list) > 0:
-            recommended_novels = self.prepare_novel_cards(random.sample(novel_list, recommended_count))
-        else:
-            recommended_novels = []
+        # Featured Novels: 选择评分最高的前6本
+        featured_novels = self.prepare_novel_cards(novel_list[:min(6, total_novels)])
+        
+        # New Novels: 按标题首字母排序，选择前10本
+        alpha_sorted = sorted(novel_list, key=lambda x: x.get('title', '').lower())
+        new_novels = self.prepare_novel_cards(alpha_sorted[:min(10, total_novels)])
+        
+        # Popular Novels: 按章节数排序，选择章节最多的前10本  
+        chapter_sorted = sorted(novel_list, key=lambda x: x.get('total_chapters', 0), reverse=True)
+        popular_novels = self.prepare_novel_cards(chapter_sorted[:min(10, total_novels)])
+        
+        # Recommended Novels: 使用哈希选择策略，基于小说标题获得一致的"推荐"
+        def hash_score(novel):
+            return hash(novel.get('title', '')) % 1000
+        
+        hash_sorted = sorted(novel_list, key=hash_score, reverse=True)
+        recommended_novels = self.prepare_novel_cards(hash_sorted[:min(8, total_novels)])
         
         # 准备分类数据
         categories = self.prepare_categories(novels)
@@ -543,7 +551,7 @@ def main():
     args = parser.parse_args()
     
     # 读取配置文件
-    site_url = 'https://my.newreadnovel.com'  # 默认正确域名
+    site_url = 'https://www.goodluckark.com'  # 默认正确域名
     config_file = 'config.json'
     if os.path.exists(config_file):
         try:

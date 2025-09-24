@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if chapter.title and novel.title %}{{ chapter.title }} - {{ novel.title }} | NovelVibe{% else %}Reading - NovelVibe{% endif %}</title>
-    <meta name="description" content="{% if chapter.summary %}{{ chapter.summary }}{% else %}Read {{ novel.title }} Chapter {{ chapter.number }} on NovelVibe - Free werewolf romance novels{% endif %}">
+    <title>{% if chapter.title and novel.title %}{{ chapter.title }} - {{ novel.title }} | GoodLuckArk{% else %}Reading - GoodLuckArk{% endif %}</title>
+    <meta name="description" content="{% if chapter.summary %}{{ chapter.summary }}{% else %}Read {{ novel.title }} Chapter {{ chapter.number }} on GoodLuckArk - Free werewolf romance novels{% endif %}">
     <meta name="keywords" content="{% if novel.tags %}{{ novel.tags|join(', ') }}{% else %}werewolf, romance, free novels, online reading{% endif %}">
     
     <!-- Time Meta Tags for SEO -->
@@ -364,7 +364,7 @@
         "dateModified": "{{ timestamps.modified_iso }}",
         "publisher": {
             "@type": "Organization",
-            "name": "NovelVibe",
+            "name": "GoodLuckArk",
             "url": "{{ site_url }}",
             "logo": {
                 "@type": "ImageObject",
@@ -404,7 +404,7 @@
                     <a href="{{ novel.url }}" class="btn" id="back-btn">
                         <i class="fas fa-chevron-left"></i>
                     </a>
-                    <a href="/" class="logo">NovelVibe</a>
+                    <a href="/" class="logo">GoodLuckArk</a>
                 </div>
                 <div class="right-header">
                     <button class="btn" id="theme-btn">

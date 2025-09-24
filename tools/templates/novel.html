@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if novel.title %}{{ novel.title }} - NovelVibe{% else %}Book Details - NovelVibe{% endif %}</title>
-    <meta name="description" content="{% if novel.description %}{{ novel.description }}{% else %}Read free werewolf romance novels on NovelVibe{% endif %}">
+    <title>{% if novel.title %}{{ novel.title }} - GoodLuckArk{% else %}Book Details - GoodLuckArk{% endif %}</title>
+    <meta name="description" content="{% if novel.description %}{{ novel.description }}{% else %}Read free werewolf romance novels on GoodLuckArk{% endif %}">
     <meta name="keywords" content="{% if novel.tags %}{{ novel.tags|join(', ') }}{% else %}werewolf, romance, free novels{% endif %}">
     
     <!-- Time Meta Tags for SEO -->
@@ -414,7 +414,7 @@
         "dateModified": "{{ timestamps.modified_iso }}",
         "publisher": {
             "@type": "Organization",
-            "name": "NovelVibe",
+            "name": "GoodLuckArk",
             "url": "{{ site_url }}"
         },
         "aggregateRating": {
@@ -441,7 +441,7 @@
                     <i class="fas fa-home"></i> Home
                 </a>
             </div>
-            <a href="/" class="logo">NovelVibe</a>
+            <a href="/" class="logo">GoodLuckArk</a>
             <div class="nav-buttons">
                 <a href="/library/" class="nav-btn">
                     <i class="fas fa-bookmark"></i> Library

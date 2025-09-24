@@ -1,10 +1,10 @@
 {
   "site": {
-    "name": "NovelVibe",
+    "name": "GoodLuckArk",
     "description": "Free Werewolf Novels for American Women",
-    "url": "https://my.newreadnovel.com",
+    "url": "https://www.goodluckark.com",
     "language": "en-US",
-    "author": "NovelVibe Team"
+    "author": "GoodLuckArk Team"
   },
   "build": {
     "source_path": "source",
@@ -16,7 +16,7 @@
   "seo": {
     "keywords": ["werewolf novels", "free novels", "romance novels", "shifter books", "paranormal romance"],
     "description_template": "Read {title} by {author} - Free werewolf novel online. {description}",
-    "title_template": "{title} - {author} | NovelVibe Free Novels"
+    "title_template": "{title} - {author} | GoodLuckArk Free Novels"
   },
   "analytics": {
     "google_analytics_id": "G-XXXXXXXXXX",
