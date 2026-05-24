@@ -47,18 +47,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #ff6b6b;
-            --secondary-color: #bb86fc;
-            --background-color: #121212;
-            --card-bg-color: #1e1e1e;
-            --text-color: #ffffff;
-            --light-text: #b3b3b3;
-            --shadow-color: rgba(0, 0, 0, 0.3);
-            --hover-shadow: rgba(0, 0, 0, 0.4);
-            --footer-bg: #0d1117;
-            --footer-text: #f0f6fc;
-            --border-color: #30363d;
-            --input-bg: #21262d;
+            --primary-color: #c0396b;
+            --secondary-color: #7c5cbf;
+            --background-color: #f7f4fb;
+            --card-bg-color: #ffffff;
+            --text-color: #1a1a2e;
+            --light-text: #6b7280;
+            --shadow-color: rgba(124, 92, 191, 0.10);
+            --hover-shadow: rgba(124, 92, 191, 0.20);
+            --footer-bg: #1a1a2e;
+            --footer-text: #e8e8f0;
+            --border-color: #ede8f5;
+            --input-bg: #f9f7fd;
+            --accent-color: #ff9f43;
         }
 
         * {
@@ -81,20 +82,22 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: var(--card-bg-color);
-            box-shadow: 0 2px 10px var(--shadow-color);
+            background-color: #ffffff;
+            box-shadow: 0 2px 12px rgba(124, 92, 191, 0.12);
             z-index: 1000;
             padding: 12px 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 2px solid var(--border-color);
         }
 
         .logo {
             font-size: 1.6rem;
-            font-weight: 700;
+            font-weight: 800;
             color: var(--primary-color);
             text-decoration: none;
+            letter-spacing: -0.5px;
         }
 
         .logo span {
@@ -113,7 +116,7 @@
 
         .search-box input {
             padding: 8px 12px 8px 35px;
-            border: 1px solid var(--border-color);
+            border: 1.5px solid var(--border-color);
             border-radius: 30px;
             font-size: 0.85rem;
             width: 220px;
@@ -125,7 +128,7 @@
         .search-box input:focus {
             outline: none;
             border-color: var(--secondary-color);
-            box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.2);
+            box-shadow: 0 0 0 3px rgba(124, 92, 191, 0.15);
             width: 250px;
         }
 
@@ -138,7 +141,7 @@
             left: 12px;
             top: 50%;
             transform: translateY(-50%);
-            color: var(--light-text);
+            color: var(--secondary-color);
             font-size: 0.9rem;
         }
 
@@ -150,20 +153,253 @@
         .user-actions a {
             color: var(--text-color);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             font-size: 0.9rem;
-            transition: color 0.3s;
+            transition: all 0.3s;
+            padding: 6px 16px;
+            border-radius: 20px;
+            border: 1.5px solid var(--border-color);
+        }
+
+        .user-actions a:last-child {
+            background-color: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
         }
 
         .user-actions a:hover {
             color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+
+        .user-actions a:last-child:hover {
+            background-color: #a8305b;
+            color: white;
+        }
+
+        /* Hero Banner */
+        .hero-banner {
+            background: linear-gradient(135deg, #7c5cbf 0%, #c0396b 65%, #ff9f43 100%);
+            color: white;
+            padding: 56px 5% 48px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-banner::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -20%;
+            width: 60%; height: 200%;
+            background: rgba(255,255,255,0.06);
+            transform: rotate(-15deg);
+            pointer-events: none;
+        }
+
+        .hero-banner::after {
+            content: '';
+            position: absolute;
+            bottom: -30%; right: -10%;
+            width: 40%; height: 150%;
+            background: rgba(255,255,255,0.04);
+            transform: rotate(20deg);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        .hero-content h1 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-bottom: 14px;
+            line-height: 1.25;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .hero-content p {
+            font-size: 1.05rem;
+            opacity: 0.93;
+            margin-bottom: 28px;
+            line-height: 1.7;
+        }
+
+        .hero-actions {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 36px;
+        }
+
+        .hero-btn-primary {
+            background-color: white;
+            color: var(--secondary-color);
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1rem;
+            transition: all 0.3s;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+        }
+
+        .hero-btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+        }
+
+        .hero-btn-secondary {
+            background-color: transparent;
+            color: white;
+            padding: 12px 28px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            border: 2px solid rgba(255,255,255,0.7);
+            transition: all 0.3s;
+        }
+
+        .hero-btn-secondary:hover {
+            background-color: rgba(255,255,255,0.15);
+            border-color: white;
+        }
+
+        .hero-badges {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-badges .badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255,255,255,0.18);
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(255,255,255,0.25);
+        }
+
+        .hero-badges .badge i {
+            font-size: 1rem;
+            color: #ffeb3b;
+        }
+
+        /* Genre Filter Pills */
+        .genre-pills {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .genre-pills .pill {
+            background-color: var(--card-bg-color);
+            color: var(--text-color);
+            border: 1.5px solid var(--border-color);
+            padding: 6px 18px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+
+        .genre-pills .pill:hover,
+        .genre-pills .pill.active {
+            background-color: var(--secondary-color);
+            color: white;
+            border-color: var(--secondary-color);
+        }
+
+        /* Why Us Section */
+        .why-us {
+            background: linear-gradient(135deg, #f7f0ff 0%, #fff5f8 100%);
+            border-radius: 16px;
+            padding: 40px 30px;
+            margin-bottom: 36px;
+            border: 1px solid var(--border-color);
+        }
+
+        .why-us-header {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--text-color);
+            text-align: center;
+            margin-bottom: 28px;
+        }
+
+        .why-us-header::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .why-card {
+            background: white;
+            padding: 24px 20px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 2px 12px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s;
+        }
+
+        .why-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .why-card i {
+            font-size: 2rem;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .why-card h3 {
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text-color);
+        }
+
+        .why-card p {
+            font-size: 0.85rem;
+            color: var(--light-text);
+            line-height: 1.6;
         }
 
         /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 15px;
+            padding: 24px 15px;
         }
 
         /* Section Headers */
@@ -171,27 +407,44 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 15px;
-            padding-bottom: 8px;
-            border-bottom: 2px solid var(--secondary-color);
+            margin-bottom: 18px;
+            padding-bottom: 10px;
+            border-bottom: 2.5px solid var(--border-color);
+            position: relative;
+        }
+
+        .section-header::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -2.5px;
+            width: 60px;
+            height: 2.5px;
+            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+            border-radius: 2px;
         }
 
         .section-title {
             font-size: 1.3rem;
+            color: var(--text-color);
+            font-weight: 700;
+        }
+
+        .section-title i {
             color: var(--secondary-color);
-            font-weight: 600;
+            margin-right: 6px;
         }
 
         .view-more {
-            color: var(--primary-color);
+            color: var(--secondary-color);
             text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
+            font-weight: 600;
+            font-size: 0.88rem;
             transition: all 0.3s;
         }
 
         .view-more:hover {
-            text-decoration: underline;
+            color: var(--primary-color);
         }
 
         /* Cards Grid */
@@ -205,18 +458,20 @@
         /* Novel Card */
         .novel-card {
             background-color: var(--card-bg-color);
-            border-radius: 8px;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 3px 8px var(--shadow-color);
+            box-shadow: 0 2px 12px var(--shadow-color);
             transition: all 0.3s ease;
             animation: fadeIn 0.5s ease-out;
             display: flex;
             flex-direction: column;
+            border: 1px solid var(--border-color);
         }
 
         .novel-card:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 6px 12px var(--hover-shadow);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px var(--hover-shadow);
+            border-color: rgba(124, 92, 191, 0.3);
         }
 
         @keyframes fadeIn {
@@ -229,6 +484,7 @@
             height: 240px;
             overflow: hidden;
             position: relative;
+            background-color: #f0ebf8;
         }
 
         .novel-cover {
@@ -236,6 +492,11 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        .novel-card:hover .novel-cover {
+            transform: scale(1.04);
         }
 
         .card-content {
@@ -276,11 +537,13 @@
         }
 
         .tag {
-            background-color: rgba(156, 137, 184, 0.15);
+            background: linear-gradient(135deg, rgba(124,92,191,0.10), rgba(192,57,107,0.08));
             color: var(--secondary-color);
-            padding: 3px 6px;
-            border-radius: 3px;
+            padding: 3px 9px;
+            border-radius: 12px;
             font-size: 0.7rem;
+            font-weight: 600;
+            border: 1px solid rgba(124, 92, 191, 0.2);
         }
 
         .card-footer {
@@ -291,35 +554,36 @@
         }
 
         .read-btn {
-            background-color: var(--primary-color);
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
             color: white;
             border: none;
-            padding: 6px 12px;
-            border-radius: 3px;
-            font-weight: 500;
-            font-size: 0.8rem;
+            padding: 7px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.78rem;
             cursor: pointer;
             transition: all 0.3s;
             text-decoration: none;
+            box-shadow: 0 2px 8px rgba(124, 92, 191, 0.3);
         }
 
         .read-btn:hover {
-            background-color: #ff5252;
             transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(124, 92, 191, 0.45);
         }
 
         /* Read More Button Styles */
         .read-more-button {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
             color: white;
             border: none;
-            padding: 12px 30px;
-            border-radius: 25px;
-            font-size: 16px;
+            padding: 12px 32px;
+            border-radius: 30px;
+            font-size: 1rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+            box-shadow: 0 4px 16px rgba(124, 92, 191, 0.35);
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -327,8 +591,7 @@
 
         .read-more-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
-            background: linear-gradient(135deg, #ff5252, #bb86fc);
+            box-shadow: 0 6px 20px rgba(124, 92, 191, 0.5);
         }
 
         .read-more-button:active {
@@ -336,24 +599,22 @@
         }
 
         .read-more-button:disabled {
-            background: var(--border-color);
+            background: #d1d5db;
+            color: #9ca3af;
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
         }
 
-        #load-more-btn:hover {
-            background-color: var(--secondary-color) !important;
-        }
-
         .update-date {
             font-size: 0.7rem;
             color: var(--light-text);
+            font-style: italic;
         }
 
         /* Featured Section */
         .featured {
-            margin-bottom: 30px;
+            margin-bottom: 36px;
         }
 
         .featured .cards-grid {
@@ -361,41 +622,56 @@
         }
 
         .featured .novel-card {
-            border: 2px solid var(--secondary-color);
+            border: 1.5px solid rgba(124, 92, 191, 0.25);
+            background: linear-gradient(135deg, #fff 0%, #fdf9ff 100%);
         }
 
         /* Categories Section */
         .categories {
-            margin-bottom: 30px;
+            margin-bottom: 36px;
         }
 
         .category-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-            gap: 12px;
+            gap: 16px;
             margin-bottom: 15px;
         }
 
         .category-item {
             background-color: var(--card-bg-color);
-            padding: 12px;
-            border-radius: 6px;
-            box-shadow: 0 2px 6px var(--shadow-color);
+            padding: 18px 16px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px var(--shadow-color);
+            border: 1px solid var(--border-color);
+            transition: transform 0.3s;
+        }
+
+        .category-item:hover {
+            transform: translateY(-2px);
         }
 
         .category-title {
             font-size: 1rem;
-            color: var(--secondary-color);
-            margin-bottom: 8px;
+            font-weight: 700;
+            color: var(--text-color);
+            margin-bottom: 12px;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding-bottom: 8px;
+            border-bottom: 1.5px solid var(--border-color);
         }
 
         .category-title a {
-            font-size: 0.85rem;
-            color: var(--primary-color);
+            font-size: 0.8rem;
+            color: var(--secondary-color);
             text-decoration: none;
+            font-weight: 600;
+        }
+
+        .category-title a:hover {
+            color: var(--primary-color);
         }
 
         .category-books {
@@ -403,8 +679,8 @@
         }
 
         .category-books li {
-            padding: 5px 0;
-            border-bottom: 1px solid #eee;
+            padding: 6px 0;
+            border-bottom: 1px solid var(--border-color);
         }
 
         .category-books li:last-child {
@@ -412,15 +688,19 @@
         }
 
         .category-books a {
-            color: var(--text-color);
+            color: var(--light-text);
             text-decoration: none;
-            transition: color 0.3s;
+            transition: color 0.3s, padding-left 0.2s;
             font-size: 0.85rem;
             display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .category-books a:hover {
             color: var(--primary-color);
+            padding-left: 4px;
         }
 
         /* History Section */
@@ -434,7 +714,7 @@
         }
 
         .history .novel-card {
-            box-shadow: 0 2px 6px rgba(156, 137, 184, 0.3);
+            box-shadow: 0 2px 10px var(--shadow-color);
         }
 
         .history .novel-title {
@@ -448,8 +728,8 @@
         }
 
         .progress-bar {
-            height: 3px;
-            background-color: #e9ecef;
+            height: 4px;
+            background-color: var(--border-color);
             border-radius: 2px;
             margin-top: 6px;
             overflow: hidden;
@@ -457,7 +737,7 @@
 
         .progress {
             height: 100%;
-            background-color: var(--primary-color);
+            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
             border-radius: 2px;
         }
 
@@ -470,7 +750,8 @@
         footer {
             background-color: var(--footer-bg);
             color: var(--footer-text);
-            padding: 30px 0 15px;
+            padding: 44px 0 0;
+            margin-top: 24px;
         }
 
         .footer-content {
@@ -478,29 +759,36 @@
             margin: 0 auto;
             padding: 0 15px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 25px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
         }
 
         .footer-logo {
             font-size: 1.6rem;
-            font-weight: 700;
+            font-weight: 800;
             color: white;
             margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .footer-logo span {
+            color: #bb86fc;
         }
 
         .footer-about {
-            font-size: 0.85rem;
-            margin-bottom: 12px;
-            opacity: 0.8;
-            line-height: 1.5;
+            font-size: 0.87rem;
+            margin-bottom: 16px;
+            opacity: 0.72;
+            line-height: 1.7;
         }
 
         .footer-links h3 {
-            font-size: 1.1rem;
-            margin-bottom: 12px;
+            font-size: 1rem;
+            margin-bottom: 14px;
             position: relative;
-            padding-bottom: 6px;
+            padding-bottom: 8px;
+            font-weight: 700;
+            color: white;
         }
 
         .footer-links h3::after {
@@ -508,9 +796,10 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 35px;
+            width: 30px;
             height: 2px;
-            background-color: var(--primary-color);
+            background: linear-gradient(90deg, #bb86fc, var(--primary-color));
+            border-radius: 2px;
         }
 
         .footer-links ul {
@@ -518,28 +807,98 @@
         }
 
         .footer-links li {
-            margin-bottom: 6px;
+            margin-bottom: 9px;
         }
 
         .footer-links a {
             color: var(--footer-text);
             text-decoration: none;
-            opacity: 0.8;
-            transition: opacity 0.3s;
-            font-size: 0.85rem;
+            opacity: 0.68;
+            transition: opacity 0.3s, color 0.3s;
+            font-size: 0.87rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
 
         .footer-links a:hover {
             opacity: 1;
+            color: #bb86fc;
+        }
+
+        .footer-newsletter p {
+            font-size: 0.85rem;
+            opacity: 0.72;
+            margin-bottom: 10px;
+            line-height: 1.55;
+        }
+
+        .footer-newsletter-form {
+            display: flex;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .footer-newsletter-form input {
+            flex: 1;
+            padding: 9px 12px;
+            border: none;
+            background: rgba(255,255,255,0.12);
+            color: white;
+            font-size: 0.85rem;
+        }
+
+        .footer-newsletter-form input::placeholder {
+            color: rgba(255,255,255,0.42);
+        }
+
+        .footer-newsletter-form button {
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 9px 14px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+
+        .footer-newsletter-form button:hover {
+            background: #a8305b;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 28px auto 0;
+            padding: 18px 15px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
         }
 
         .copyright {
-            text-align: center;
-            padding-top: 15px;
-            margin-top: 15px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.85rem;
-            opacity: 0.7;
+            font-size: 0.83rem;
+            opacity: 0.58;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            gap: 18px;
+        }
+
+        .footer-bottom-links a {
+            color: var(--footer-text);
+            text-decoration: none;
+            font-size: 0.83rem;
+            opacity: 0.58;
+            transition: opacity 0.3s;
+        }
+
+        .footer-bottom-links a:hover {
+            opacity: 1;
         }
 
         /* Responsive Design */
@@ -549,11 +908,19 @@
             }
 
             .search-box input {
-                width: 160px;
+                width: 150px;
             }
 
             .search-box input:focus {
-                width: 180px;
+                width: 170px;
+            }
+
+            .hero-content h1 {
+                font-size: 1.7rem;
+            }
+
+            .hero-banner {
+                padding: 40px 5% 34px;
             }
 
             .section-header {
@@ -574,20 +941,29 @@
             .category-list {
                 grid-template-columns: 1fr;
             }
+
+            .why-us {
+                padding: 28px 16px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+            }
         }
 
         @media (max-width: 576px) {
             .nav-right {
-                gap: 10px;
+                gap: 8px;
             }
 
             .search-box input {
-                width: 130px;
+                width: 120px;
                 padding: 6px 10px 6px 28px;
             }
 
             .search-box input:focus {
-                width: 150px;
+                width: 140px;
             }
 
             .search-box i {
@@ -609,11 +985,29 @@
             }
             
             .container {
-                padding: 10px;
+                padding: 16px 12px;
             }
             
             .section-title {
-                font-size: 1.2rem;
+                font-size: 1.15rem;
+            }
+
+            .hero-content h1 {
+                font-size: 1.4rem;
+            }
+
+            .hero-badges {
+                gap: 10px;
+            }
+
+            .hero-badges .badge {
+                padding: 6px 12px;
+                font-size: 0.8rem;
+            }
+
+            .genre-pills .pill {
+                padding: 5px 14px;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -629,16 +1023,34 @@
             </div>
             <div class="user-actions">
                 <a href="/login/">Login</a>
-                <a href="/register/">Register</a>
+                <a href="/register/">Register Free</a>
             </div>
         </div>
     </nav>
+
+    <!-- Hero Banner -->
+    <div class="hero-banner">
+        <div class="hero-content">
+            <h1>Your Free Romance Novel Library</h1>
+            <p>Discover hundreds of captivating werewolf, billionaire, and fantasy romance novels — completely free to read. No subscription, no paywalls, just great stories.</p>
+            <div class="hero-actions">
+                <a href="#recommended" class="hero-btn-primary"><i class="fas fa-book-open"></i> Start Reading Free</a>
+                <a href="#categories" class="hero-btn-secondary"><i class="fas fa-th-large"></i> Browse Genres</a>
+            </div>
+        </div>
+        <div class="hero-badges">
+            <div class="badge"><i class="fas fa-book"></i><span>80+ Novels</span></div>
+            <div class="badge"><i class="fas fa-star"></i><span>Top Rated Stories</span></div>
+            <div class="badge"><i class="fas fa-unlock"></i><span>Always 100% Free</span></div>
+            <div class="badge"><i class="fas fa-mobile-alt"></i><span>Read on Any Device</span></div>
+        </div>
+    </div>
 
     <div class="container">
         <!-- Reading History Section -->
         <section class="history">
             <div class="section-header">
-                <h2 class="section-title">Reading History</h2>
+                <h2 class="section-title"><i class="fas fa-history"></i> Reading History</h2>
                 <a href="#" class="view-more" onclick="clearReadingHistory()">Clear History</a>
             </div>
             <div class="cards-grid" id="history-container">
@@ -647,9 +1059,18 @@
         </section>
 
         <!-- Recommended For You Section -->
-        <section class="recommended">
+        <section class="recommended" id="recommended">
             <div class="section-header">
-                <h2 class="section-title">Recommended For You</h2>
+                <h2 class="section-title"><i class="fas fa-fire"></i> Recommended For You</h2>
+            </div>
+            <!-- Genre Filter Pills -->
+            <div class="genre-pills">
+                <button class="pill active" onclick="filterByGenre(this, 'all')">All</button>
+                <button class="pill" onclick="filterByGenre(this, 'werewolf')">Werewolf</button>
+                <button class="pill" onclick="filterByGenre(this, 'romance')">Romance</button>
+                <button class="pill" onclick="filterByGenre(this, 'billionaire')">Billionaire CEO</button>
+                <button class="pill" onclick="filterByGenre(this, 'fantasy')">Fantasy</button>
+                <button class="pill" onclick="filterByGenre(this, 'alpha')">Alpha</button>
             </div>
             <div class="cards-grid" id="recommended-grid">
                 <!-- 默认展示8本小说 -->
@@ -860,19 +1281,46 @@
         <!-- Featured Novels Section -->
         <section class="featured">
             <div class="section-header">
-                <h2 class="section-title">Featured Novels</h2>
-                <a href="#" class="view-more">View All</a>
+                <h2 class="section-title"><i class="fas fa-award"></i> Featured Novels</h2>
+                <a href="#" class="view-more">View All <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="cards-grid" id="featured-grid">
                 <!-- 所有小说将通过 JavaScript 动态加载 -->
             </div>
         </section>
 
+        <!-- Why Read With Us Section -->
+        <section class="why-us">
+            <div class="why-us-header">Why Readers Love GoodLuckArk</div>
+            <div class="why-us-grid">
+                <div class="why-card">
+                    <i class="fas fa-unlock"></i>
+                    <h3>Always Free</h3>
+                    <p>No paywalls, no subscriptions. Every chapter of every novel is completely free to read, forever.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Read Anywhere</h3>
+                    <p>Optimized for all devices. Enjoy your favorite stories on your phone, tablet, or desktop — anytime.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-fire"></i>
+                    <h3>Hot &amp; Trending</h3>
+                    <p>Discover the most popular romance, paranormal, and fantasy novels handpicked for women readers.</p>
+                </div>
+                <div class="why-card">
+                    <i class="fas fa-sync-alt"></i>
+                    <h3>Regular Updates</h3>
+                    <p>New chapters and novels added regularly. There's always something fresh and exciting waiting for you.</p>
+                </div>
+            </div>
+        </section>
+
         <!-- Categories Section -->
-        <section class="categories">
+        <section class="categories" id="categories">
             <div class="section-header">
-                <h2 class="section-title">Browse by Category</h2>
-                <a href="#" class="view-more">View All Categories</a>
+                <h2 class="section-title"><i class="fas fa-th-large"></i> Browse by Category</h2>
+                <a href="#" class="view-more">All Categories <i class="fas fa-chevron-right"></i></a>
             </div>
             <div class="category-list">
                 
@@ -969,43 +1417,68 @@
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <div class="footer-logo">GoodLuckArk</div>
-                <p>GoodLuckArk offers a wide selection of free novels for women. Discover new stories across various genres and enjoy reading anywhere, anytime.</p>
+                <div class="footer-logo">Good<span>Luck</span>Ark</div>
+                <p>GoodLuckArk is your destination for free romance and fantasy novels. We curate the best werewolf, billionaire CEO, and paranormal stories written for women who love captivating reads.</p>
+                <div class="footer-newsletter" style="margin-top:16px;">
+                    <p>Get weekly novel recommendations in your inbox:</p>
+                    <div class="footer-newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="button"><i class="fas fa-paper-plane"></i> Subscribe</button>
+                    </div>
+                </div>
             </div>
             
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="/about/">About Us</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-                    <li><a href="/privacy/">Privacy Policy</a></li>
-                    <li><a href="/terms/">Terms of Service</a></li>
+                    <li><a href="/about/"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="/contact/"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="/privacy/"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
+                    <li><a href="/terms/"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Genres</h3>
+                <ul>
+                    <li><a href="/category/werewolf/"><i class="fas fa-moon"></i> Werewolf Romance</a></li>
+                    <li><a href="/category/billionaire/"><i class="fas fa-briefcase"></i> Billionaire CEO</a></li>
+                    <li><a href="/category/fantasy/"><i class="fas fa-dragon"></i> Fantasy</a></li>
+                    <li><a href="/category/romance/"><i class="fas fa-heart"></i> Romance</a></li>
+                    <li><a href="/category/contemporary/"><i class="fas fa-city"></i> Contemporary</a></li>
                 </ul>
             </div>
             
             <div class="footer-links">
                 <h3>Support</h3>
                 <ul>
-                    <li><a href="/help/">Help Center</a></li>
-                    <li><a href="/faq/">FAQ</a></li>
-                    <li><a href="/feedback/">Feedback</a></li>
-                    <li><a href="/report/">Report Issue</a></li>
+                    <li><a href="/help/"><i class="fas fa-question-circle"></i> Help Center</a></li>
+                    <li><a href="/faq/"><i class="fas fa-comments"></i> FAQ</a></li>
+                    <li><a href="/feedback/"><i class="fas fa-star"></i> Feedback</a></li>
+                    <li><a href="/report/"><i class="fas fa-flag"></i> Report Issue</a></li>
                 </ul>
-            </div>
-            
-            <div class="footer-links">
-                <h3>Connect With Us</h3>
-                <ul>
-                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
-                </ul>
+                <div style="margin-top:16px;">
+                    <p style="font-size:0.83rem;opacity:0.6;margin-bottom:10px;font-weight:600;color:white;">Follow Us</p>
+                    <div style="display:flex;gap:12px;">
+                        <a href="#" style="font-size:1.2rem;opacity:0.7;" title="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="font-size:1.2rem;opacity:0.7;" title="Twitter/X"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="font-size:1.2rem;opacity:0.7;" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="font-size:1.2rem;opacity:0.7;" title="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
             </div>
         </div>
         
-        <div class="copyright">
-            <p>&copy; 2024 GoodLuckArk. All rights reserved.</p>
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; 2025 GoodLuckArk. All rights reserved. Free novels for women, read online.
+            </div>
+            <div class="footer-bottom-links">
+                <a href="/privacy/">Privacy</a>
+                <a href="/terms/">Terms</a>
+                <a href="/sitemap.xml">Sitemap</a>
+                <a href="/contact/">Contact</a>
+            </div>
         </div>
     </footer>
 
@@ -1014,15 +1487,15 @@
         document.addEventListener('DOMContentLoaded', function() {
             const cards = document.querySelectorAll('.novel-card');
             cards.forEach((card, index) => {
-                card.style.animationDelay = `${index * 0.1}s`;
+                card.style.animationDelay = `${index * 0.06}s`;
             });
         });
-
         // Simple reading history simulation
         const historyItems = document.querySelectorAll('.history .novel-card');
         historyItems.forEach(item => {
             item.addEventListener('click', function() {
-                alert('Continue reading from where you left off?');
+                const titleEl = this.querySelector('.novel-title');
+                if (titleEl) console.log('Resuming:', titleEl.textContent);
             });
         });
 
@@ -1100,33 +1573,29 @@
             
             // 如果超过6小时没检查，或者是首次访问，则检查新内容
             if (!lastCheck || (currentTime - parseInt(lastCheck)) > 6 * 60 * 60 * 1000) {
-                // 检查页面上的小说数量
                 const novelCount = document.querySelectorAll('.novel-card').length;
                 const lastNovelCount = localStorage.getItem('lastNovelCount');
                 
                 if (lastNovelCount && parseInt(lastNovelCount) < novelCount) {
-                    // 发现新小说，显示提示
                     showNewContentNotification();
                 }
                 
-                // 更新记录
                 localStorage.setItem('lastContentCheck', currentTime.toString());
                 localStorage.setItem('lastNovelCount', novelCount.toString());
             }
         }
         
         function showNewContentNotification() {
-            // 创建一个温和的提示，不会干扰阅读历史
             const notification = document.createElement('div');
             notification.style.cssText = `
                 position: fixed;
-                top: 20px;
+                top: 80px;
                 right: 20px;
-                background: linear-gradient(135deg, #ff6b6b, #9c89b8);
+                background: linear-gradient(135deg, #7c5cbf, #c0396b);
                 color: white;
-                padding: 15px 20px;
-                border-radius: 8px;
-                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                padding: 14px 20px;
+                border-radius: 10px;
+                box-shadow: 0 4px 16px rgba(124,92,191,0.3);
                 z-index: 10000;
                 font-size: 14px;
                 cursor: pointer;
@@ -1135,7 +1604,7 @@
             notification.innerHTML = `
                 <div style="display: flex; align-items: center; gap: 10px;">
                     <i class="fas fa-sparkles" style="color: #ffeb3b;"></i>
-                    <span>发现新小说！</span>
+                    <span>New novels added!</span>
                     <i class="fas fa-times" style="margin-left: 10px; font-size: 12px; opacity: 0.7;"></i>
                 </div>
             `;
@@ -1170,21 +1639,20 @@
             });
         }
 
-        // 强制获取最新首页内容（不清除缓存）
-        function ensureFreshContent() {
-            // 每次访问首页时，通过添加时间戳参数来绕过页面缓存
-            const urlParams = new URLSearchParams(window.location.search);
-            const refreshParam = urlParams.get('v');
-            const currentTime = new Date().getTime();
-            
-            // 如果没有版本参数，或版本参数过旧（超过1分钟），则刷新
-            if (!refreshParam || (currentTime - parseInt(refreshParam)) > 60000) {
-                const newUrl = window.location.pathname + '?v=' + currentTime;
-                if (window.location.href !== window.location.origin + newUrl) {
-                    window.history.replaceState({}, '', newUrl);
-                    window.location.reload();
+        // Genre filter functionality
+        function filterByGenre(btn, genre) {
+            document.querySelectorAll('.genre-pills .pill').forEach(p => p.classList.remove('active'));
+            btn.classList.add('active');
+            const grid = document.getElementById('recommended-grid');
+            const cards = grid.querySelectorAll('.novel-card');
+            cards.forEach(card => {
+                if (genre === 'all') {
+                    card.style.display = '';
+                } else {
+                    const tags = Array.from(card.querySelectorAll('.tag')).map(t => t.textContent.trim().toLowerCase());
+                    card.style.display = tags.some(t => t.includes(genre)) ? '' : 'none';
                 }
-            }
+            });
         }
 
         // Recommended For You - Read More 功能
@@ -1339,16 +1807,11 @@
             loadReadingHistory();
             checkForNewContent();
             
-            // 加载所有小说到 Featured Novels（优先执行）
+            // 加载所有小说到 Featured Novels
             loadAllFeaturedNovels();
             
-            // 初始化推荐区域（优先执行，避免被页面刷新中断）
+            // 初始化推荐区域
             initializeRecommendedSection();
-            
-            // 确保获取最新内容（放在最后，避免影响其他功能）
-            setTimeout(() => {
-                ensureFreshContent();
-            }, 1000); // 延迟1秒执行，确保推荐区域已经初始化完成
         });
     </script>
 </body>
