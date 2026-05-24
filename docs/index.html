@@ -1267,15 +1267,6 @@
                 
             </div>
             
-            <!-- Read More Button -->
-            <div class="read-more-container" style="text-align: center; margin: 30px 0;">
-                <button id="read-more-btn" class="read-more-button" style="display: inline-flex;">
-                    <i class="fas fa-plus"></i> Read More
-                </button>
-                <div id="loading-indicator" style="display: none; color: #666; margin: 20px 0; font-size: 16px;">
-                    <i class="fas fa-spinner fa-spin"></i> Loading more novels...
-                </div>
-            </div>
         </section>
         
         <!-- Featured Novels Section -->
@@ -1655,27 +1646,18 @@
             });
         }
 
-        // Recommended For You - Read More 功能
+        // Recommended For You - 全部展示
         let allNovels = [];
-        let currentIndex = 8; // 已经显示了初始的8本
-        const batchSize = 8;
 
         function loadNovelsData() {
             try {
                 const dataElement = document.getElementById('novels-data');
                 if (dataElement && dataElement.textContent.trim()) {
                     allNovels = JSON.parse(dataElement.textContent);
-                    console.log('成功加载小说数据：', allNovels.length, '本');
-                    // 随机打乱小说顺序，但保持前8本不变（已经在模板中显示）
-                    const remainingNovels = allNovels.slice(8);
-                    shuffleArray(remainingNovels);
-                    allNovels = [...allNovels.slice(0, 8), ...remainingNovels];
                 } else {
-                    console.error('未找到小说数据或数据为空');
                     allNovels = [];
                 }
             } catch (error) {
-                console.error('加载小说数据时出错:', error);
                 allNovels = [];
             }
         }
@@ -1710,74 +1692,15 @@
             `;
         }
 
-        function loadMoreRecommendedNovels() {
-            const grid = document.getElementById('recommended-grid');
-            const readMoreBtn = document.getElementById('read-more-btn');
-            const loadingIndicator = document.getElementById('loading-indicator');
-            
-            if (!grid || currentIndex >= allNovels.length) {
-                // 没有更多小说了，隐藏按钮
-                if (readMoreBtn) {
-                    readMoreBtn.style.display = 'none';
-                }
-                return;
-            }
-
-            // 显示加载指示器，隐藏按钮
-            if (loadingIndicator) loadingIndicator.style.display = 'block';
-            if (readMoreBtn) readMoreBtn.disabled = true;
-
-            setTimeout(() => {
-                const endIndex = Math.min(currentIndex + batchSize, allNovels.length);
-                const batch = allNovels.slice(currentIndex, endIndex);
-                
-                batch.forEach(novel => {
-                    grid.insertAdjacentHTML('beforeend', createNovelCard(novel));
-                });
-                
-                currentIndex = endIndex;
-                
-                // 隐藏加载指示器
-                if (loadingIndicator) loadingIndicator.style.display = 'none';
-                
-                // 更新按钮状态
-                if (readMoreBtn) {
-                    readMoreBtn.disabled = false;
-                    if (currentIndex >= allNovels.length) {
-                        readMoreBtn.textContent = 'No More Novels';
-                        readMoreBtn.disabled = true;
-                        setTimeout(() => {
-                            readMoreBtn.style.display = 'none';
-                        }, 2000);
-                    }
-                }
-            }, 800); // 模拟加载延迟
-        }
-
         function initializeRecommendedSection() {
             loadNovelsData();
-            
-            // 绑定Read More按钮事件
-            const readMoreBtn = document.getElementById('read-more-btn');
-            if (readMoreBtn) {
-                readMoreBtn.addEventListener('click', loadMoreRecommendedNovels);
-                
-                // 确保按钮可见（防止被其他逻辑隐藏）
-                readMoreBtn.style.display = 'inline-flex';
-                
-                // 延迟检查数据加载状态
-                setTimeout(() => {
-                    console.log('小说数据加载状态：', allNovels.length, '本小说');
-                    // 只有在确实没有更多小说时才隐藏按钮
-                    if (allNovels.length <= 8) {
-                        readMoreBtn.style.display = 'none';
-                        console.log('小说数量不足，隐藏Read More按钮');
-                    } else {
-                        readMoreBtn.style.display = 'inline-flex';
-                        console.log('显示Read More按钮，可加载更多小说');
-                    }
-                }, 200);
-            }
+            const grid = document.getElementById('recommended-grid');
+            if (!grid || !allNovels.length) return;
+            // 清空已有的8个硬编码卡片，改为全部从数据渲染
+            grid.innerHTML = '';
+            allNovels.forEach(novel => {
+                grid.insertAdjacentHTML('beforeend', createNovelCard(novel));
+            });
         }
 
         function loadAllFeaturedNovels() {
