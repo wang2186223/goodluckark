@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GoodLuckArk - Free Novels for Women</title>
+    <title>WeAreNovelArk - Free Novels for Women | Romance, Fantasy & Werewolf Stories</title>
     <meta name="description" content="Discover thousands of free werewolf romance novels. Read passionate alpha stories, mate bonds, and pack adventures. Perfect for women who love paranormal romance.">
     <meta name="keywords" content="free werewolf novels, alpha romance, mate bond stories, paranormal romance, werewolf fiction, free books for women">
     
@@ -16,7 +16,7 @@
     
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="GoodLuckArk - Free Novels for Women">
+    <meta property="og:title" content="WeAreNovelArk - Free Novels for Women">
     <meta property="og:description" content="Discover thousands of free werewolf romance novels">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.wearenovelark.com/">
@@ -24,7 +24,7 @@
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GoodLuckArk">
+    <meta name="twitter:title" content="WeAreNovelArk">
     <meta name="twitter:description" content="Free werewolf romance novels">
     
     <!-- Canonical URL -->
@@ -47,18 +47,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #ff6b6b;
-            --secondary-color: #bb86fc;
-            --background-color: #121212;
-            --card-bg-color: #1e1e1e;
-            --text-color: #ffffff;
-            --light-text: #b3b3b3;
-            --shadow-color: rgba(0, 0, 0, 0.3);
-            --hover-shadow: rgba(0, 0, 0, 0.4);
-            --footer-bg: #0d1117;
-            --footer-text: #f0f6fc;
-            --border-color: #30363d;
-            --input-bg: #21262d;
+            --primary-color: #c0396b;
+            --secondary-color: #7c5cbf;
+            --background-color: #f7f4fb;
+            --card-bg-color: #ffffff;
+            --text-color: #1a1a2e;
+            --light-text: #6b6b8a;
+            --shadow-color: rgba(124, 92, 191, 0.10);
+            --hover-shadow: rgba(124, 92, 191, 0.20);
+            --footer-bg: #2d1b69;
+            --footer-text: #f0e6ff;
+            --border-color: #e0d7f0;
+            --input-bg: #f5f0fa;
         }
 
         * {
@@ -304,7 +304,7 @@
         }
 
         .read-btn:hover {
-            background-color: #ff5252;
+            background-color: #a02d5a;
             transform: translateY(-1px);
         }
 
@@ -809,7 +809,7 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <a href="/" class="logo">Novel<span>Vibe</span></a>
+        <a href="/" class="logo">WeAreNovel<span>Ark</span></a>
         <div class="nav-right">
             <div class="search-box">
                 <i class="fas fa-search"></i>
@@ -1465,8 +1465,8 @@ Ye Xingguang, dumped on the day of her graduation, stormed to the civil departme
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <div class="footer-logo">GoodLuckArk</div>
-                <p>GoodLuckArk offers a wide selection of free novels for women. Discover new stories across various genres and enjoy reading anywhere, anytime.</p>
+                <div class="footer-logo">WeAreNovelArk</div>
+                <p>WeAreNovelArk offers a curated selection of free novels for women. Discover romance, fantasy, werewolf, and more — read anywhere, anytime, completely free.</p>
             </div>
             
             <div class="footer-links">
@@ -1501,7 +1501,7 @@ Ye Xingguang, dumped on the day of her graduation, stormed to the civil departme
         </div>
         
         <div class="copyright">
-            <p>&copy; 2024 GoodLuckArk. All rights reserved.</p>
+            <p>&copy; 2025 WeAreNovelArk. All rights reserved.</p>
         </div>
     </footer>
 
@@ -1666,22 +1666,7 @@ Ye Xingguang, dumped on the day of her graduation, stormed to the civil departme
             });
         }
 
-        // 强制获取最新首页内容（不清除缓存）
-        function ensureFreshContent() {
-            // 每次访问首页时，通过添加时间戳参数来绕过页面缓存
-            const urlParams = new URLSearchParams(window.location.search);
-            const refreshParam = urlParams.get('v');
-            const currentTime = new Date().getTime();
-            
-            // 如果没有版本参数，或版本参数过旧（超过1分钟），则刷新
-            if (!refreshParam || (currentTime - parseInt(refreshParam)) > 60000) {
-                const newUrl = window.location.pathname + '?v=' + currentTime;
-                if (window.location.href !== window.location.origin + newUrl) {
-                    window.history.replaceState({}, '', newUrl);
-                    window.location.reload();
-                }
-            }
-        }
+
 
         // Recommended For You - Read More 功能
         let allNovels = [];
@@ -1785,27 +1770,22 @@ Ye Xingguang, dumped on the day of her graduation, stormed to the civil departme
         function initializeRecommendedSection() {
             loadNovelsData();
             
-            // 绑定Read More按钮事件
-            const readMoreBtn = document.getElementById('read-more-btn');
-            if (readMoreBtn) {
-                readMoreBtn.addEventListener('click', loadMoreRecommendedNovels);
-                
-                // 确保按钮可见（防止被其他逻辑隐藏）
-                readMoreBtn.style.display = 'inline-flex';
-                
-                // 延迟检查数据加载状态
-                setTimeout(() => {
-                    console.log('小说数据加载状态：', allNovels.length, '本小说');
-                    // 只有在确实没有更多小说时才隐藏按钮
-                    if (allNovels.length <= 8) {
-                        readMoreBtn.style.display = 'none';
-                        console.log('小说数量不足，隐藏Read More按钮');
-                    } else {
-                        readMoreBtn.style.display = 'inline-flex';
-                        console.log('显示Read More按钮，可加载更多小说');
+            // Auto-load all novels without requiring button click
+            setTimeout(() => {
+                const grid = document.getElementById('recommended-grid');
+                if (grid) {
+                    while (currentIndex < allNovels.length) {
+                        const endIndex = Math.min(currentIndex + batchSize, allNovels.length);
+                        const batch = allNovels.slice(currentIndex, endIndex);
+                        batch.forEach(novel => {
+                            grid.insertAdjacentHTML('beforeend', createNovelCard(novel));
+                        });
+                        currentIndex = endIndex;
                     }
-                }, 200);
-            }
+                }
+                const container = document.querySelector('.read-more-container');
+                if (container) container.style.display = 'none';
+            }, 150);
         }
 
         // 页面加载时初始化
@@ -1816,10 +1796,7 @@ Ye Xingguang, dumped on the day of her graduation, stormed to the civil departme
             // 初始化推荐区域（优先执行，避免被页面刷新中断）
             initializeRecommendedSection();
             
-            // 确保获取最新内容（放在最后，避免影响其他功能）
-            setTimeout(() => {
-                ensureFreshContent();
-            }, 1000); // 延迟1秒执行，确保推荐区域已经初始化完成
+
         });
     </script>
 </body>
