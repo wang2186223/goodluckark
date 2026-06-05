@@ -166,7 +166,7 @@
                 <div class="novel-card">
                     <div class="cover-container">
                         <a href="${novel.url}">
-                            <img src="${novel.cover_url}" alt="${novel.title}" class="novel-cover" loading="lazy">
+                            <img src="/covers/${novel.slug}-${(novel.cover_path||"").split("/").pop()}" alt="${novel.title}" class="novel-cover" loading="lazy">
                         </a>
                     </div>
                     <div class="card-content">
@@ -198,7 +198,7 @@
                         }
                     }
                 });
-                novels.sort((a, b) => (b.chapters || 0) - (a.chapters || 0));
+                novels.sort((a, b) => (b.total_chapters || 0) - (a.total_chapters || 0));
                 countEl.textContent = novels.length + ' Novels';
                 grid.innerHTML = novels.length
                     ? novels.map(createCard).join('')
