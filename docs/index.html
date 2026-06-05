@@ -9,18 +9,18 @@
     
     <!-- Time Meta Tags for SEO -->
     
-    <meta property="article:published_time" content="2025-12-08T15:53:11.413246">
-    <meta property="article:modified_time" content="2025-12-08T15:53:11.413246">
-    <meta name="date" content="2025-12-08">
-    <meta name="last-modified" content="2025-12-08 15:53:11">
+    <meta property="article:published_time" content="2026-06-05T09:34:22.847318">
+    <meta property="article:modified_time" content="2026-06-05T09:34:22.847318">
+    <meta name="date" content="2026-06-05">
+    <meta name="last-modified" content="2026-06-05 09:34:22">
     
     
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="GoodLuckArk - Free Novels for Women">
     <meta property="og:description" content="Discover thousands of free werewolf romance novels">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.goodluckark.com/">
-    <meta property="og:image" content="https://www.goodluckark.com/assets/images/og-image.jpg">
+    <meta property="og:url" content="https://www.wearenovelark.com/">
+    <meta property="og:image" content="https://www.wearenovelark.com/assets/images/og-image.jpg">
     
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
@@ -28,7 +28,7 @@
     <meta name="twitter:description" content="Free werewolf romance novels">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://www.goodluckark.com/">
+    <link rel="canonical" href="https://www.wearenovelark.com/">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PB16LJ1NP9"></script>
@@ -47,19 +47,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #c0396b;
-            --secondary-color: #7c5cbf;
-            --background-color: #f7f4fb;
-            --card-bg-color: #ffffff;
-            --text-color: #1a1a2e;
-            --light-text: #6b7280;
-            --shadow-color: rgba(124, 92, 191, 0.10);
-            --hover-shadow: rgba(124, 92, 191, 0.20);
-            --footer-bg: #1a1a2e;
-            --footer-text: #e8e8f0;
-            --border-color: #ede8f5;
-            --input-bg: #f9f7fd;
-            --accent-color: #ff9f43;
+            --primary-color: #ff6b6b;
+            --secondary-color: #bb86fc;
+            --background-color: #121212;
+            --card-bg-color: #1e1e1e;
+            --text-color: #ffffff;
+            --light-text: #b3b3b3;
+            --shadow-color: rgba(0, 0, 0, 0.3);
+            --hover-shadow: rgba(0, 0, 0, 0.4);
+            --footer-bg: #0d1117;
+            --footer-text: #f0f6fc;
+            --border-color: #30363d;
+            --input-bg: #21262d;
         }
 
         * {
@@ -82,22 +81,20 @@
             top: 0;
             left: 0;
             width: 100%;
-            background-color: #ffffff;
-            box-shadow: 0 2px 12px rgba(124, 92, 191, 0.12);
+            background-color: var(--card-bg-color);
+            box-shadow: 0 2px 10px var(--shadow-color);
             z-index: 1000;
             padding: 12px 5%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 2px solid var(--border-color);
         }
 
         .logo {
             font-size: 1.6rem;
-            font-weight: 800;
+            font-weight: 700;
             color: var(--primary-color);
             text-decoration: none;
-            letter-spacing: -0.5px;
         }
 
         .logo span {
@@ -116,7 +113,7 @@
 
         .search-box input {
             padding: 8px 12px 8px 35px;
-            border: 1.5px solid var(--border-color);
+            border: 1px solid var(--border-color);
             border-radius: 30px;
             font-size: 0.85rem;
             width: 220px;
@@ -128,7 +125,7 @@
         .search-box input:focus {
             outline: none;
             border-color: var(--secondary-color);
-            box-shadow: 0 0 0 3px rgba(124, 92, 191, 0.15);
+            box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.2);
             width: 250px;
         }
 
@@ -141,7 +138,7 @@
             left: 12px;
             top: 50%;
             transform: translateY(-50%);
-            color: var(--secondary-color);
+            color: var(--light-text);
             font-size: 0.9rem;
         }
 
@@ -153,253 +150,20 @@
         .user-actions a {
             color: var(--text-color);
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 0.9rem;
-            transition: all 0.3s;
-            padding: 6px 16px;
-            border-radius: 20px;
-            border: 1.5px solid var(--border-color);
-        }
-
-        .user-actions a:last-child {
-            background-color: var(--primary-color);
-            color: white;
-            border-color: var(--primary-color);
+            transition: color 0.3s;
         }
 
         .user-actions a:hover {
             color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-
-        .user-actions a:last-child:hover {
-            background-color: #a8305b;
-            color: white;
-        }
-
-        /* Hero Banner */
-        .hero-banner {
-            background: linear-gradient(135deg, #7c5cbf 0%, #c0396b 65%, #ff9f43 100%);
-            color: white;
-            padding: 56px 5% 48px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-banner::before {
-            content: '';
-            position: absolute;
-            top: -50%; left: -20%;
-            width: 60%; height: 200%;
-            background: rgba(255,255,255,0.06);
-            transform: rotate(-15deg);
-            pointer-events: none;
-        }
-
-        .hero-banner::after {
-            content: '';
-            position: absolute;
-            bottom: -30%; right: -10%;
-            width: 40%; height: 150%;
-            background: rgba(255,255,255,0.04);
-            transform: rotate(20deg);
-            pointer-events: none;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 720px;
-            margin: 0 auto;
-        }
-
-        .hero-content h1 {
-            font-size: 2.4rem;
-            font-weight: 800;
-            margin-bottom: 14px;
-            line-height: 1.25;
-            text-shadow: 0 2px 8px rgba(0,0,0,0.15);
-        }
-
-        .hero-content p {
-            font-size: 1.05rem;
-            opacity: 0.93;
-            margin-bottom: 28px;
-            line-height: 1.7;
-        }
-
-        .hero-actions {
-            display: flex;
-            gap: 14px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 36px;
-        }
-
-        .hero-btn-primary {
-            background-color: white;
-            color: var(--secondary-color);
-            padding: 12px 28px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1rem;
-            transition: all 0.3s;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.15);
-        }
-
-        .hero-btn-primary:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-        }
-
-        .hero-btn-secondary {
-            background-color: transparent;
-            color: white;
-            padding: 12px 28px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1rem;
-            border: 2px solid rgba(255,255,255,0.7);
-            transition: all 0.3s;
-        }
-
-        .hero-btn-secondary:hover {
-            background-color: rgba(255,255,255,0.15);
-            border-color: white;
-        }
-
-        .hero-badges {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-badges .badge {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            background: rgba(255,255,255,0.18);
-            padding: 8px 18px;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            backdrop-filter: blur(4px);
-            border: 1px solid rgba(255,255,255,0.25);
-        }
-
-        .hero-badges .badge i {
-            font-size: 1rem;
-            color: #ffeb3b;
-        }
-
-        /* Genre Filter Pills */
-        .genre-pills {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin-bottom: 20px;
-        }
-
-        .genre-pills .pill {
-            background-color: var(--card-bg-color);
-            color: var(--text-color);
-            border: 1.5px solid var(--border-color);
-            padding: 6px 18px;
-            border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: all 0.25s;
-        }
-
-        .genre-pills .pill:hover,
-        .genre-pills .pill.active {
-            background-color: var(--secondary-color);
-            color: white;
-            border-color: var(--secondary-color);
-        }
-
-        /* Why Us Section */
-        .why-us {
-            background: linear-gradient(135deg, #f7f0ff 0%, #fff5f8 100%);
-            border-radius: 16px;
-            padding: 40px 30px;
-            margin-bottom: 36px;
-            border: 1px solid var(--border-color);
-        }
-
-        .why-us-header {
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: var(--text-color);
-            text-align: center;
-            margin-bottom: 28px;
-        }
-
-        .why-us-header::after {
-            content: '';
-            display: block;
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-            margin: 10px auto 0;
-            border-radius: 2px;
-        }
-
-        .why-us-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .why-card {
-            background: white;
-            padding: 24px 20px;
-            border-radius: 12px;
-            text-align: center;
-            box-shadow: 0 2px 12px var(--shadow-color);
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s;
-        }
-
-        .why-card:hover {
-            transform: translateY(-3px);
-        }
-
-        .why-card i {
-            font-size: 2rem;
-            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 12px;
-            display: block;
-        }
-
-        .why-card h3 {
-            font-size: 1rem;
-            font-weight: 700;
-            margin-bottom: 8px;
-            color: var(--text-color);
-        }
-
-        .why-card p {
-            font-size: 0.85rem;
-            color: var(--light-text);
-            line-height: 1.6;
         }
 
         /* Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 24px 15px;
+            padding: 15px;
         }
 
         /* Section Headers */
@@ -407,44 +171,27 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            margin-bottom: 18px;
-            padding-bottom: 10px;
-            border-bottom: 2.5px solid var(--border-color);
-            position: relative;
-        }
-
-        .section-header::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: -2.5px;
-            width: 60px;
-            height: 2.5px;
-            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
-            border-radius: 2px;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--secondary-color);
         }
 
         .section-title {
             font-size: 1.3rem;
-            color: var(--text-color);
-            font-weight: 700;
-        }
-
-        .section-title i {
             color: var(--secondary-color);
-            margin-right: 6px;
+            font-weight: 600;
         }
 
         .view-more {
-            color: var(--secondary-color);
+            color: var(--primary-color);
             text-decoration: none;
-            font-weight: 600;
-            font-size: 0.88rem;
+            font-weight: 500;
+            font-size: 0.9rem;
             transition: all 0.3s;
         }
 
         .view-more:hover {
-            color: var(--primary-color);
+            text-decoration: underline;
         }
 
         /* Cards Grid */
@@ -458,20 +205,18 @@
         /* Novel Card */
         .novel-card {
             background-color: var(--card-bg-color);
-            border-radius: 12px;
+            border-radius: 8px;
             overflow: hidden;
-            box-shadow: 0 2px 12px var(--shadow-color);
+            box-shadow: 0 3px 8px var(--shadow-color);
             transition: all 0.3s ease;
             animation: fadeIn 0.5s ease-out;
             display: flex;
             flex-direction: column;
-            border: 1px solid var(--border-color);
         }
 
         .novel-card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px var(--hover-shadow);
-            border-color: rgba(124, 92, 191, 0.3);
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 6px 12px var(--hover-shadow);
         }
 
         @keyframes fadeIn {
@@ -484,7 +229,6 @@
             height: 240px;
             overflow: hidden;
             position: relative;
-            background-color: #f0ebf8;
         }
 
         .novel-cover {
@@ -492,11 +236,6 @@
             height: 100%;
             object-fit: cover;
             object-position: center;
-            transition: transform 0.3s ease;
-        }
-
-        .novel-card:hover .novel-cover {
-            transform: scale(1.04);
         }
 
         .card-content {
@@ -537,13 +276,11 @@
         }
 
         .tag {
-            background: linear-gradient(135deg, rgba(124,92,191,0.10), rgba(192,57,107,0.08));
+            background-color: rgba(156, 137, 184, 0.15);
             color: var(--secondary-color);
-            padding: 3px 9px;
-            border-radius: 12px;
+            padding: 3px 6px;
+            border-radius: 3px;
             font-size: 0.7rem;
-            font-weight: 600;
-            border: 1px solid rgba(124, 92, 191, 0.2);
         }
 
         .card-footer {
@@ -554,36 +291,35 @@
         }
 
         .read-btn {
-            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            background-color: var(--primary-color);
             color: white;
             border: none;
-            padding: 7px 16px;
-            border-radius: 20px;
-            font-weight: 600;
-            font-size: 0.78rem;
+            padding: 6px 12px;
+            border-radius: 3px;
+            font-weight: 500;
+            font-size: 0.8rem;
             cursor: pointer;
             transition: all 0.3s;
             text-decoration: none;
-            box-shadow: 0 2px 8px rgba(124, 92, 191, 0.3);
         }
 
         .read-btn:hover {
+            background-color: #ff5252;
             transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(124, 92, 191, 0.45);
         }
 
         /* Read More Button Styles */
         .read-more-button {
-            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
             color: white;
             border: none;
-            padding: 12px 32px;
-            border-radius: 30px;
-            font-size: 1rem;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 16px;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 16px rgba(124, 92, 191, 0.35);
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
             display: inline-flex;
             align-items: center;
             gap: 8px;
@@ -591,7 +327,8 @@
 
         .read-more-button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(124, 92, 191, 0.5);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+            background: linear-gradient(135deg, #ff5252, #bb86fc);
         }
 
         .read-more-button:active {
@@ -599,22 +336,24 @@
         }
 
         .read-more-button:disabled {
-            background: #d1d5db;
-            color: #9ca3af;
+            background: var(--border-color);
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
         }
 
+        #load-more-btn:hover {
+            background-color: var(--secondary-color) !important;
+        }
+
         .update-date {
             font-size: 0.7rem;
             color: var(--light-text);
-            font-style: italic;
         }
 
         /* Featured Section */
         .featured {
-            margin-bottom: 36px;
+            margin-bottom: 30px;
         }
 
         .featured .cards-grid {
@@ -622,56 +361,41 @@
         }
 
         .featured .novel-card {
-            border: 1.5px solid rgba(124, 92, 191, 0.25);
-            background: linear-gradient(135deg, #fff 0%, #fdf9ff 100%);
+            border: 2px solid var(--secondary-color);
         }
 
         /* Categories Section */
         .categories {
-            margin-bottom: 36px;
+            margin-bottom: 30px;
         }
 
         .category-list {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
-            gap: 16px;
+            gap: 12px;
             margin-bottom: 15px;
         }
 
         .category-item {
             background-color: var(--card-bg-color);
-            padding: 18px 16px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px var(--shadow-color);
-            border: 1px solid var(--border-color);
-            transition: transform 0.3s;
-        }
-
-        .category-item:hover {
-            transform: translateY(-2px);
+            padding: 12px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px var(--shadow-color);
         }
 
         .category-title {
             font-size: 1rem;
-            font-weight: 700;
-            color: var(--text-color);
-            margin-bottom: 12px;
+            color: var(--secondary-color);
+            margin-bottom: 8px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding-bottom: 8px;
-            border-bottom: 1.5px solid var(--border-color);
         }
 
         .category-title a {
-            font-size: 0.8rem;
-            color: var(--secondary-color);
-            text-decoration: none;
-            font-weight: 600;
-        }
-
-        .category-title a:hover {
+            font-size: 0.85rem;
             color: var(--primary-color);
+            text-decoration: none;
         }
 
         .category-books {
@@ -679,8 +403,8 @@
         }
 
         .category-books li {
-            padding: 6px 0;
-            border-bottom: 1px solid var(--border-color);
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
         }
 
         .category-books li:last-child {
@@ -688,19 +412,15 @@
         }
 
         .category-books a {
-            color: var(--light-text);
+            color: var(--text-color);
             text-decoration: none;
-            transition: color 0.3s, padding-left 0.2s;
+            transition: color 0.3s;
             font-size: 0.85rem;
             display: block;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
         }
 
         .category-books a:hover {
             color: var(--primary-color);
-            padding-left: 4px;
         }
 
         /* History Section */
@@ -714,7 +434,7 @@
         }
 
         .history .novel-card {
-            box-shadow: 0 2px 10px var(--shadow-color);
+            box-shadow: 0 2px 6px rgba(156, 137, 184, 0.3);
         }
 
         .history .novel-title {
@@ -728,8 +448,8 @@
         }
 
         .progress-bar {
-            height: 4px;
-            background-color: var(--border-color);
+            height: 3px;
+            background-color: #e9ecef;
             border-radius: 2px;
             margin-top: 6px;
             overflow: hidden;
@@ -737,7 +457,7 @@
 
         .progress {
             height: 100%;
-            background: linear-gradient(90deg, var(--secondary-color), var(--primary-color));
+            background-color: var(--primary-color);
             border-radius: 2px;
         }
 
@@ -750,8 +470,7 @@
         footer {
             background-color: var(--footer-bg);
             color: var(--footer-text);
-            padding: 44px 0 0;
-            margin-top: 24px;
+            padding: 30px 0 15px;
         }
 
         .footer-content {
@@ -759,36 +478,29 @@
             margin: 0 auto;
             padding: 0 15px;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 25px;
         }
 
         .footer-logo {
             font-size: 1.6rem;
-            font-weight: 800;
+            font-weight: 700;
             color: white;
             margin-bottom: 12px;
-            letter-spacing: -0.5px;
-        }
-
-        .footer-logo span {
-            color: #bb86fc;
         }
 
         .footer-about {
-            font-size: 0.87rem;
-            margin-bottom: 16px;
-            opacity: 0.72;
-            line-height: 1.7;
+            font-size: 0.85rem;
+            margin-bottom: 12px;
+            opacity: 0.8;
+            line-height: 1.5;
         }
 
         .footer-links h3 {
-            font-size: 1rem;
-            margin-bottom: 14px;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
             position: relative;
-            padding-bottom: 8px;
-            font-weight: 700;
-            color: white;
+            padding-bottom: 6px;
         }
 
         .footer-links h3::after {
@@ -796,10 +508,9 @@
             position: absolute;
             left: 0;
             bottom: 0;
-            width: 30px;
+            width: 35px;
             height: 2px;
-            background: linear-gradient(90deg, #bb86fc, var(--primary-color));
-            border-radius: 2px;
+            background-color: var(--primary-color);
         }
 
         .footer-links ul {
@@ -807,98 +518,28 @@
         }
 
         .footer-links li {
-            margin-bottom: 9px;
+            margin-bottom: 6px;
         }
 
         .footer-links a {
             color: var(--footer-text);
             text-decoration: none;
-            opacity: 0.68;
-            transition: opacity 0.3s, color 0.3s;
-            font-size: 0.87rem;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+            font-size: 0.85rem;
         }
 
         .footer-links a:hover {
             opacity: 1;
-            color: #bb86fc;
-        }
-
-        .footer-newsletter p {
-            font-size: 0.85rem;
-            opacity: 0.72;
-            margin-bottom: 10px;
-            line-height: 1.55;
-        }
-
-        .footer-newsletter-form {
-            display: flex;
-            border-radius: 6px;
-            overflow: hidden;
-        }
-
-        .footer-newsletter-form input {
-            flex: 1;
-            padding: 9px 12px;
-            border: none;
-            background: rgba(255,255,255,0.12);
-            color: white;
-            font-size: 0.85rem;
-        }
-
-        .footer-newsletter-form input::placeholder {
-            color: rgba(255,255,255,0.42);
-        }
-
-        .footer-newsletter-form button {
-            background: var(--primary-color);
-            color: white;
-            border: none;
-            padding: 9px 14px;
-            cursor: pointer;
-            font-size: 0.85rem;
-            font-weight: 600;
-            transition: background 0.3s;
-        }
-
-        .footer-newsletter-form button:hover {
-            background: #a8305b;
-        }
-
-        .footer-bottom {
-            max-width: 1200px;
-            margin: 28px auto 0;
-            padding: 18px 15px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 10px;
         }
 
         .copyright {
-            font-size: 0.83rem;
-            opacity: 0.58;
-        }
-
-        .footer-bottom-links {
-            display: flex;
-            gap: 18px;
-        }
-
-        .footer-bottom-links a {
-            color: var(--footer-text);
-            text-decoration: none;
-            font-size: 0.83rem;
-            opacity: 0.58;
-            transition: opacity 0.3s;
-        }
-
-        .footer-bottom-links a:hover {
-            opacity: 1;
+            text-align: center;
+            padding-top: 15px;
+            margin-top: 15px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.85rem;
+            opacity: 0.7;
         }
 
         /* Responsive Design */
@@ -908,19 +549,11 @@
             }
 
             .search-box input {
-                width: 150px;
+                width: 160px;
             }
 
             .search-box input:focus {
-                width: 170px;
-            }
-
-            .hero-content h1 {
-                font-size: 1.7rem;
-            }
-
-            .hero-banner {
-                padding: 40px 5% 34px;
+                width: 180px;
             }
 
             .section-header {
@@ -941,29 +574,20 @@
             .category-list {
                 grid-template-columns: 1fr;
             }
-
-            .why-us {
-                padding: 28px 16px;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                align-items: flex-start;
-            }
         }
 
         @media (max-width: 576px) {
             .nav-right {
-                gap: 8px;
+                gap: 10px;
             }
 
             .search-box input {
-                width: 120px;
+                width: 130px;
                 padding: 6px 10px 6px 28px;
             }
 
             .search-box input:focus {
-                width: 140px;
+                width: 150px;
             }
 
             .search-box i {
@@ -985,29 +609,11 @@
             }
             
             .container {
-                padding: 16px 12px;
+                padding: 10px;
             }
             
             .section-title {
-                font-size: 1.15rem;
-            }
-
-            .hero-content h1 {
-                font-size: 1.4rem;
-            }
-
-            .hero-badges {
-                gap: 10px;
-            }
-
-            .hero-badges .badge {
-                padding: 6px 12px;
-                font-size: 0.8rem;
-            }
-
-            .genre-pills .pill {
-                padding: 5px 14px;
-                font-size: 0.8rem;
+                font-size: 1.2rem;
             }
         }
     </style>
@@ -1015,42 +621,24 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <a href="/" class="logo">Good<span>Luck</span>Ark</a>
+        <a href="/" class="logo">Novel<span>Vibe</span></a>
         <div class="nav-right">
             <div class="search-box">
                 <i class="fas fa-search"></i>
                 <input type="text" placeholder="Search novels...">
             </div>
             <div class="user-actions">
-                <a href="/login/">Login</a>
-                <a href="/register/">Register Free</a>
+                <a href="#">Login</a>
+                <a href="#">Register</a>
             </div>
         </div>
     </nav>
-
-    <!-- Hero Banner -->
-    <div class="hero-banner">
-        <div class="hero-content">
-            <h1>Your Free Romance Novel Library</h1>
-            <p>Discover hundreds of captivating werewolf, billionaire, and fantasy romance novels — completely free to read. No subscription, no paywalls, just great stories.</p>
-            <div class="hero-actions">
-                <a href="#recommended" class="hero-btn-primary"><i class="fas fa-book-open"></i> Start Reading Free</a>
-                <a href="#categories" class="hero-btn-secondary"><i class="fas fa-th-large"></i> Browse Genres</a>
-            </div>
-        </div>
-        <div class="hero-badges">
-            <div class="badge"><i class="fas fa-book"></i><span>80+ Novels</span></div>
-            <div class="badge"><i class="fas fa-star"></i><span>Top Rated Stories</span></div>
-            <div class="badge"><i class="fas fa-unlock"></i><span>Always 100% Free</span></div>
-            <div class="badge"><i class="fas fa-mobile-alt"></i><span>Read on Any Device</span></div>
-        </div>
-    </div>
 
     <div class="container">
         <!-- Reading History Section -->
         <section class="history">
             <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-history"></i> Reading History</h2>
+                <h2 class="section-title">Reading History</h2>
                 <a href="#" class="view-more" onclick="clearReadingHistory()">Clear History</a>
             </div>
             <div class="cards-grid" id="history-container">
@@ -1059,21 +647,271 @@
         </section>
 
         <!-- Recommended For You Section -->
-        <section class="recommended" id="recommended">
+        <section class="recommended">
             <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-fire"></i> Recommended For You</h2>
-            </div>
-            <!-- Genre Filter Pills -->
-            <div class="genre-pills">
-                <button class="pill active" onclick="filterByGenre(this, 'all')">All</button>
-                <button class="pill" onclick="filterByGenre(this, 'werewolf')">Werewolf</button>
-                <button class="pill" onclick="filterByGenre(this, 'romance')">Romance</button>
-                <button class="pill" onclick="filterByGenre(this, 'billionaire')">Billionaire CEO</button>
-                <button class="pill" onclick="filterByGenre(this, 'fantasy')">Fantasy</button>
-                <button class="pill" onclick="filterByGenre(this, 'alpha')">Alpha</button>
+                <h2 class="section-title">Recommended For You</h2>
             </div>
             <div class="cards-grid" id="recommended-grid">
                 <!-- 默认展示8本小说 -->
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/after-i-leftbillionaire-ex-hunts-me-worldwide/">
+                            <img src="/covers/after-i-leftbillionaire-ex-hunts-me-worldwide-ScreenShot_2025-11-24_104030_729.png" alt="After I Left，Billionaire Ex Hunts Me Worldwide" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/after-i-leftbillionaire-ex-hunts-me-worldwide/" style="color: inherit; text-decoration: none;">After I Left，Billionaire Ex Hunts Me Worldwide</a></h3>
+                        <p class="novel-desc">For six years I was Nathan Evans’s invisible mistress, designing jewels for his socialite fiancée. Now my hidden inheritance reveals I’m the true heiress. With his twins in my womb, I’ll melt his...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/after-i-leftbillionaire-ex-hunts-me-worldwide/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-billionaires-bargain-bridescorned-heiress-strikes-back/">
+                            <img src="/covers/the-billionaires-bargain-bridescorned-heiress-strikes-back-ScreenShot_2025-11-24_110646_613.png" alt="The Billionaire&#39;s Bargain Bride：Scorned Heiress Strikes Back" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-billionaires-bargain-bridescorned-heiress-strikes-back/" style="color: inherit; text-decoration: none;">The Billionaire&#39;s Bargain Bride：Scorned Heiress Strikes Back</a></h3>
+                        <p class="novel-desc">...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-billionaires-bargain-bridescorned-heiress-strikes-back/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/bracelet-of-lies/">
+                            <img src="/covers/bracelet-of-lies-wechat_2025-06-25_121012_788.png" alt="Bracelet of Lies" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/bracelet-of-lies/" style="color: inherit; text-decoration: none;">Bracelet of Lies</a></h3>
+                        <p class="novel-desc">...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/bracelet-of-lies/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/thornes-redemption/">
+                            <img src="/covers/thornes-redemption-wechat_2025-06-24_155329_552.png" alt="THORNE&#39;S REDEMPTION" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/thornes-redemption/" style="color: inherit; text-decoration: none;">THORNE&#39;S REDEMPTION</a></h3>
+                        <p class="novel-desc">Sparks fly when defiant Amaris dumps coffee on her new boss—ruthless CEO Caleb Thorne. Forced to become his secretary, their battle of wills ignites electric tension. But when her friend is kidnapped...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ceo</span>
+                            
+                            <span class="tag">billionaire</span>
+                            
+                            <span class="tag">contemporary</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/thornes-redemption/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/psis-asylum/">
+                            <img src="/covers/psis-asylum-wechat_2025-06-25_131857_929.png" alt="Psi&#39;s Asylum" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/psis-asylum/" style="color: inherit; text-decoration: none;">Psi&#39;s Asylum</a></h3>
+                        <p class="novel-desc">&#34;In a world where teen survivors of a deadly plague develop dangerous powers, 16-year-old Ruby hides her mind-control ability to survive a brutal camp. Rescued by rebels with dark secrets, she must...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/psis-asylum/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/royal-secret-the-lycan-kings-bargain/">
+                            <img src="/covers/royal-secret-the-lycan-kings-bargain-wechat_2025-06-24_132847_995.png" alt="Royal Secret The Lycan King&#39;s Bargain" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/royal-secret-the-lycan-kings-bargain/" style="color: inherit; text-decoration: none;">Royal Secret The Lycan King&#39;s Bargain</a></h3>
+                        <p class="novel-desc">...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/royal-secret-the-lycan-kings-bargain/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-poison-in-his-kiss/">
+                            <img src="/covers/the-poison-in-his-kiss-wechat_2025-06-24_134444_629.png" alt="The Poison in His Kiss" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-poison-in-his-kiss/" style="color: inherit; text-decoration: none;">The Poison in His Kiss</a></h3>
+                        <p class="novel-desc">Trapped in a gilded cage of deception, Caroline discovers her &#34;loving&#34; husband’s cure is a slow-acting poison. With her body failing and children in danger, she feigns weakness to uncover his affair...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-poison-in-his-kiss/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/his-first-love-returned-during-my-pregnancy/">
+                            <img src="/covers/his-first-love-returned-during-my-pregnancy-ScreenShot_2025-11-24_110553_734.png" alt="His First Love Returned During My Pregnancy" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/his-first-love-returned-during-my-pregnancy/" style="color: inherit; text-decoration: none;">His First Love Returned During My Pregnancy</a></h3>
+                        <p class="novel-desc">I thought marrying Alexander Hamilton was fate—we shared &#39;Evelyn&#39; like a vow. But when his pregnant &#39;Annabelle&#39; returned, I learned I was just a placeholder. After the miscarriage he demanded, I walk...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/his-first-love-returned-during-my-pregnancy/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <!-- Read More Button -->
+            <div class="read-more-container" style="text-align: center; margin: 30px 0;">
+                <button id="read-more-btn" class="read-more-button" style="display: inline-flex;">
+                    <i class="fas fa-plus"></i> Read More
+                </button>
+                <div id="loading-indicator" style="display: none; color: #666; margin: 20px 0; font-size: 16px;">
+                    <i class="fas fa-spinner fa-spin"></i> Loading more novels...
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Novels Section -->
+        <section class="featured">
+            <div class="section-header">
+                <h2 class="section-title">Featured Novels</h2>
+                <a href="#" class="view-more">View All</a>
+            </div>
+            <div class="cards-grid">
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/between-ruin-and-resolve-my-ex-husbands-regret1/">
+                            <img src="/covers/between-ruin-and-resolve-my-ex-husbands-regret1-wechat_2025-09-23_141907_738.png" alt="Between Ruin And Resolve My Ex-Husband’s Regret1" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/between-ruin-and-resolve-my-ex-husbands-regret1/" style="color: inherit; text-decoration: none;">Between Ruin And Resolve My Ex-Husband’s Regret1</a></h3>
+                        <p class="novel-desc">Noah’s eyes darkened with desire as he observed her yielding, his actions becoming bolder and less restrained.
+Just as Sadie was about to regain her composure, she gasped softly, her plea laced with...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">werewolf</span>
+                            
+                            <span class="tag">alpha</span>
+                            
+                            <span class="tag">pack</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/between-ruin-and-resolve-my-ex-husbands-regret1/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/the-richest-billionaire-is-my-accidental-husband/">
+                            <img src="/covers/the-richest-billionaire-is-my-accidental-husband-图片.jpg" alt="The Richest Billionaire is My Accidental Husband" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/the-richest-billionaire-is-my-accidental-husband/" style="color: inherit; text-decoration: none;">The Richest Billionaire is My Accidental Husband</a></h3>
+                        <p class="novel-desc">[The country finally matched me with a partner—the richest man in the world.]
+Ye Xingguang, dumped on the day of her graduation, stormed to the civil department to get in the queue for matchmaking,...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">ceo</span>
+                            
+                            <span class="tag">billionaire</span>
+                            
+                            <span class="tag">contemporary</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/the-richest-billionaire-is-my-accidental-husband/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
                 
                 <div class="novel-card">
                     <div class="cover-container">
@@ -1095,19 +933,42 @@
                         </div>
                         <div class="card-footer">
                             <a href="/novels/the-hidden-princess-at-all-boys-alpha-academy/" class="read-btn">Read Now</a>
-                            <div class="update-date">2025-12-08</div>
+                            <div class="update-date">2026-06-05</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="novel-card">
                     <div class="cover-container">
-                        <a href="/novels/scalpel-and-moonlight/">
-                            <img src="/covers/scalpel-and-moonlight-wechat_2025-06-24_152341_227.png" alt="Scalpel and Moonlight" class="novel-cover">
+                        <a href="/novels/his-first-love-returned-during-my-pregnancy/">
+                            <img src="/covers/his-first-love-returned-during-my-pregnancy-ScreenShot_2025-11-24_110553_734.png" alt="His First Love Returned During My Pregnancy" class="novel-cover">
                         </a>
                     </div>
                     <div class="card-content">
-                        <h3 class="novel-title"><a href="/novels/scalpel-and-moonlight/" style="color: inherit; text-decoration: none;">Scalpel and Moonlight</a></h3>
+                        <h3 class="novel-title"><a href="/novels/his-first-love-returned-during-my-pregnancy/" style="color: inherit; text-decoration: none;">His First Love Returned During My Pregnancy</a></h3>
+                        <p class="novel-desc">I thought marrying Alexander Hamilton was fate—we shared &#39;Evelyn&#39; like a vow. But when his pregnant &#39;Annabelle&#39; returned, I learned I was just a placeholder. After the miscarriage he demanded, I walk...</p>
+                        <div class="tags">
+                            
+                            <span class="tag">romance</span>
+                            
+                            <span class="tag">fantasy</span>
+                            
+                        </div>
+                        <div class="card-footer">
+                            <a href="/novels/his-first-love-returned-during-my-pregnancy/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="novel-card">
+                    <div class="cover-container">
+                        <a href="/novels/revenge-in-diamonds/">
+                            <img src="/covers/revenge-in-diamonds-wechat_2025-06-24_145825_429.png" alt="Revenge in Diamonds" class="novel-cover">
+                        </a>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="novel-title"><a href="/novels/revenge-in-diamonds/" style="color: inherit; text-decoration: none;">Revenge in Diamonds</a></h3>
                         <p class="novel-desc">...</p>
                         <div class="tags">
                             
@@ -1117,201 +978,45 @@
                             
                         </div>
                         <div class="card-footer">
-                            <a href="/novels/scalpel-and-moonlight/" class="read-btn">Read Now</a>
-                            <div class="update-date">2025-12-08</div>
+                            <a href="/novels/revenge-in-diamonds/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
                         </div>
                     </div>
                 </div>
                 
                 <div class="novel-card">
                     <div class="cover-container">
-                        <a href="/novels/bloodline-captive-russian-mafia-heirs/">
-                            <img src="/covers/bloodline-captive-russian-mafia-heirs-wechat_2025-06-23_155957_916.png" alt="Bloodline Captive Russian Mafia Heirs" class="novel-cover">
+                        <a href="/novels/mistaken-midnight-with-the-ceo/">
+                            <img src="/covers/mistaken-midnight-with-the-ceo-wechat_2025-06-25_132314_345.png" alt="Mistaken Midnight with the CEO" class="novel-cover">
                         </a>
                     </div>
                     <div class="card-content">
-                        <h3 class="novel-title"><a href="/novels/bloodline-captive-russian-mafia-heirs/" style="color: inherit; text-decoration: none;">Bloodline Captive Russian Mafia Heirs</a></h3>
-                        <p class="novel-desc">...</p>
+                        <h3 class="novel-title"><a href="/novels/mistaken-midnight-with-the-ceo/" style="color: inherit; text-decoration: none;">Mistaken Midnight with the CEO</a></h3>
+                        <p class="novel-desc">One wild night, one wrong bed. When intern Layla wakes up beside her ex&#39;s uncle—the formidable CEO Samuel—their accidental passion ignites a war of pride and desire. In a world of corporate schemes...</p>
                         <div class="tags">
                             
                             <span class="tag">romance</span>
-                            
-                            <span class="tag">fantasy</span>
-                            
-                        </div>
-                        <div class="card-footer">
-                            <a href="/novels/bloodline-captive-russian-mafia-heirs/" class="read-btn">Read Now</a>
-                            <div class="update-date">2025-12-08</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="novel-card">
-                    <div class="cover-container">
-                        <a href="/novels/tangled-vows/">
-                            <img src="/covers/tangled-vows-wechat_2025-06-24_135123_743.png" alt="Tangled Vows" class="novel-cover">
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="novel-title"><a href="/novels/tangled-vows/" style="color: inherit; text-decoration: none;">Tangled Vows</a></h3>
-                        <p class="novel-desc">...</p>
-                        <div class="tags">
-                            
-                            <span class="tag">romance</span>
-                            
-                            <span class="tag">fantasy</span>
-                            
-                        </div>
-                        <div class="card-footer">
-                            <a href="/novels/tangled-vows/" class="read-btn">Read Now</a>
-                            <div class="update-date">2025-12-08</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="novel-card">
-                    <div class="cover-container">
-                        <a href="/novels/soulbound-whispers-of-the-fallen-temple/">
-                            <img src="/covers/soulbound-whispers-of-the-fallen-temple-wechat_2025-06-24_144654_529.png" alt="Soulbound Whispers of the Fallen Temple" class="novel-cover">
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="novel-title"><a href="/novels/soulbound-whispers-of-the-fallen-temple/" style="color: inherit; text-decoration: none;">Soulbound Whispers of the Fallen Temple</a></h3>
-                        <p class="novel-desc">Princess Volencia would surrender her crown to save her people—until a stranger with a possessed sword shatters her fate. To break an ancient curse, they must unravel a prophecy binding gods and...</p>
-                        <div class="tags">
-                            
-                            <span class="tag">werewolf</span>
-                            
-                            <span class="tag">alpha</span>
-                            
-                            <span class="tag">pack</span>
-                            
-                        </div>
-                        <div class="card-footer">
-                            <a href="/novels/soulbound-whispers-of-the-fallen-temple/" class="read-btn">Read Now</a>
-                            <div class="update-date">2025-12-08</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="novel-card">
-                    <div class="cover-container">
-                        <a href="/novels/contractual-hearts-the-billionaires-redemption/">
-                            <img src="/covers/contractual-hearts-the-billionaires-redemption-wechat_2025-06-23_184651_208.png" alt="Contractual Hearts The Billionaire&#39;s Redemption" class="novel-cover">
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="novel-title"><a href="/novels/contractual-hearts-the-billionaires-redemption/" style="color: inherit; text-decoration: none;">Contractual Hearts The Billionaire&#39;s Redemption</a></h3>
-                        <p class="novel-desc">Sherry Hue, a genius stock trader drowning in family debts, signs a 90-day marriage contract with enigmatic billionaire Bryan Ruger—$100,000 weekly for playing his devoted wife. But their icy...</p>
-                        <div class="tags">
                             
                             <span class="tag">ceo</span>
                             
                             <span class="tag">billionaire</span>
                             
-                            <span class="tag">contemporary</span>
-                            
                         </div>
                         <div class="card-footer">
-                            <a href="/novels/contractual-hearts-the-billionaires-redemption/" class="read-btn">Read Now</a>
-                            <div class="update-date">2025-12-08</div>
+                            <a href="/novels/mistaken-midnight-with-the-ceo/" class="read-btn">Read Now</a>
+                            <div class="update-date">2026-06-05</div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="novel-card">
-                    <div class="cover-container">
-                        <a href="/novels/veiled-in-emerald-temptation/">
-                            <img src="/covers/veiled-in-emerald-temptation-wechat_2025-06-25_134455_387.png" alt="Veiled in Emerald Temptation" class="novel-cover">
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="novel-title"><a href="/novels/veiled-in-emerald-temptation/" style="color: inherit; text-decoration: none;">Veiled in Emerald Temptation</a></h3>
-                        <p class="novel-desc">...</p>
-                        <div class="tags">
-                            
-                            <span class="tag">romance</span>
-                            
-                            <span class="tag">fantasy</span>
-                            
-                        </div>
-                        <div class="card-footer">
-                            <a href="/novels/veiled-in-emerald-temptation/" class="read-btn">Read Now</a>
-                            <div class="update-date">2025-12-08</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="novel-card">
-                    <div class="cover-container">
-                        <a href="/novels/ceos-ex-wife-strikes-back/">
-                            <img src="/covers/ceos-ex-wife-strikes-back-ScreenShot_2025-11-24_110520_714.png" alt="CEO&#39;s Ex-Wife Strikes Back" class="novel-cover">
-                        </a>
-                    </div>
-                    <div class="card-content">
-                        <h3 class="novel-title"><a href="/novels/ceos-ex-wife-strikes-back/" style="color: inherit; text-decoration: none;">CEO&#39;s Ex-Wife Strikes Back</a></h3>
-                        <p class="novel-desc">...</p>
-                        <div class="tags">
-                            
-                            <span class="tag">romance</span>
-                            
-                            <span class="tag">fantasy</span>
-                            
-                        </div>
-                        <div class="card-footer">
-                            <a href="/novels/ceos-ex-wife-strikes-back/" class="read-btn">Read Now</a>
-                            <div class="update-date">2025-12-08</div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            
-        </section>
-        
-        <!-- Featured Novels Section -->
-        <section class="featured">
-            <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-award"></i> Featured Novels</h2>
-                <a href="#" class="view-more">View All <i class="fas fa-chevron-right"></i></a>
-            </div>
-            <div class="cards-grid" id="featured-grid">
-                <!-- 所有小说将通过 JavaScript 动态加载 -->
-            </div>
-        </section>
-
-        <!-- Why Read With Us Section -->
-        <section class="why-us">
-            <div class="why-us-header">Why Readers Love GoodLuckArk</div>
-            <div class="why-us-grid">
-                <div class="why-card">
-                    <i class="fas fa-unlock"></i>
-                    <h3>Always Free</h3>
-                    <p>No paywalls, no subscriptions. Every chapter of every novel is completely free to read, forever.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h3>Read Anywhere</h3>
-                    <p>Optimized for all devices. Enjoy your favorite stories on your phone, tablet, or desktop — anytime.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-fire"></i>
-                    <h3>Hot &amp; Trending</h3>
-                    <p>Discover the most popular romance, paranormal, and fantasy novels handpicked for women readers.</p>
-                </div>
-                <div class="why-card">
-                    <i class="fas fa-sync-alt"></i>
-                    <h3>Regular Updates</h3>
-                    <p>New chapters and novels added regularly. There's always something fresh and exciting waiting for you.</p>
-                </div>
             </div>
         </section>
 
         <!-- Categories Section -->
-        <section class="categories" id="categories">
+        <section class="categories">
             <div class="section-header">
-                <h2 class="section-title"><i class="fas fa-th-large"></i> Browse by Category</h2>
-                <a href="#" class="view-more">All Categories <i class="fas fa-chevron-right"></i></a>
+                <h2 class="section-title">Browse by Category</h2>
+                <a href="#" class="view-more">View All Categories</a>
             </div>
             <div class="category-list">
                 
@@ -1401,75 +1106,50 @@
 
     <!-- 隐藏的小说数据，供JavaScript使用 -->
     <script type="application/json" id="novels-data">
-        [{"author": "Unknown Author", "chapters": 1373, "cover_url": "/covers/between-ruin-and-resolve-my-ex-husbands-regret1-wechat_2025-09-23_141907_738.png", "description": "Noah\u2019s eyes darkened with desire as he observed her yielding, his actions becoming bolder and less restrained.\nJust as Sadie was about to regain her composure, she gasped softly, her plea laced with...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Between Ruin And Resolve My Ex-Husband\u2019s Regret1", "url": "/novels/between-ruin-and-resolve-my-ex-husbands-regret1/"}, {"author": "Unknown Author", "chapters": 1208, "cover_url": "/covers/the-richest-billionaire-is-my-accidental-husband-\u56fe\u7247.jpg", "description": "[The country finally matched me with a partner\u2014the richest man in the world.]\nYe Xingguang, dumped on the day of her graduation, stormed to the civil department to get in the queue for matchmaking,...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "The Richest Billionaire is My Accidental Husband", "url": "/novels/the-richest-billionaire-is-my-accidental-husband/"}, {"author": "Unknown Author", "chapters": 1031, "cover_url": "/covers/the-hidden-princess-at-all-boys-alpha-academy-\u56fe\u7247.jpg", "description": "(Sequel of Accidental Surrogate For Alpha. Can be read alone.) Ariel was looking forward to her arranged marriage as the perfect princess, only to discover that she was being seen merely as a...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "The Hidden Princess At All-Boys Alpha Academy", "url": "/novels/the-hidden-princess-at-all-boys-alpha-academy/"}, {"author": "Unknown Author", "chapters": 998, "cover_url": "/covers/his-first-love-returned-during-my-pregnancy-ScreenShot_2025-11-24_110553_734.png", "description": "I thought marrying Alexander Hamilton was fate\u2014we shared \u0027Evelyn\u0027 like a vow. But when his pregnant \u0027Annabelle\u0027 returned, I learned I was just a placeholder. After the miscarriage he demanded, I walk...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "His First Love Returned During My Pregnancy", "url": "/novels/his-first-love-returned-during-my-pregnancy/"}, {"author": "Unknown Author", "chapters": 786, "cover_url": "/covers/revenge-in-diamonds-wechat_2025-06-24_145825_429.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Revenge in Diamonds", "url": "/novels/revenge-in-diamonds/"}, {"author": "Unknown Author", "chapters": 777, "cover_url": "/covers/mistaken-midnight-with-the-ceo-wechat_2025-06-25_132314_345.png", "description": "One wild night, one wrong bed. When intern Layla wakes up beside her ex\u0027s uncle\u2014the formidable CEO Samuel\u2014their accidental passion ignites a war of pride and desire. In a world of corporate schemes...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "ceo", "billionaire"], "title": "Mistaken Midnight with the CEO", "url": "/novels/mistaken-midnight-with-the-ceo/"}, {"author": "Unknown Author", "chapters": 704, "cover_url": "/covers/seducing-my-exs-father-in-law-wechat_2025-09-16_145815_254.png", "description": "Judy\u0027s fated mate abandons her for power. Heartbroken, she becomes entangled with a powerful Lycan, battling betrayal, forbidden attraction, and a desperate fight to save her family.", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Seducing My Ex\u2019s Father In Law", "url": "/novels/seducing-my-exs-father-in-law/"}, {"author": "Unknown Author", "chapters": 611, "cover_url": "/covers/alphas-mark-lunas-heart-wechat_2025-09-17_140910_227.png", "description": "The pack thinks she\u2019s just a tattoo artist.\nThe rogues want her genius brain.\nBut the Alpha-heir wants the curve of her hip under his claws\u2014because only she can ink the mark that will bind his soul\u2026...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Alpha\u2019s Mark, Luna\u2019s Heart", "url": "/novels/alphas-mark-lunas-heart/"}, {"author": "Unknown Author", "chapters": 545, "cover_url": "/covers/phantoms-heir-wechat_2025-06-25_143547_859.png", "description": "Trapped on a sentient island, Acacia is imprisoned in a castle that feeds her, clothes her\u2014and impregnates her. With time running out before the birth, she must unravel a primal ritual binding her to...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Phantom\u2019s Heir", "url": "/novels/phantoms-heir/"}, {"author": "Unknown Author", "chapters": 544, "cover_url": "/covers/keep-distance-mr-ceo-\u56fe\u7247.jpg", "description": "This text has been published under the name \u201cAmidst the Falling Stars\u201d.\n\u201cPresident, I\u0027ve found a little Baozi who looks a lot like you.\u201d\n\u201cPresident, Baozi says he doesn\u0027t have a real dad; he\u0027s a...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ocean", "underwater", "marine"], "title": "Keep Distance, Mr. CEO!", "url": "/novels/keep-distance-mr-ceo/"}, {"author": "Unknown Author", "chapters": 533, "cover_url": "/covers/taking-alpha-twins-away-after-divorce-\u56fe\u7247.jpg", "description": "Discover the romance story in Taking Alpha\u0027s Twins Away After Divorce novel by Internet, a gripping tale of love, betrayal, and empowerment. You can read Taking Alpha\u0027s Twins Away After Divorce novel...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Taking Alpha Twins Away After Divorce", "url": "/novels/taking-alpha-twins-away-after-divorce/"}, {"author": "Unknown Author", "chapters": 512, "cover_url": "/covers/bets-and-bridal-veils-wechat_2025-06-24_155230_688.png", "description": "She gambled her marriage to save her family. He vowed to break her pride. But when her royal flush identity surfaces, their game turns lethal\u2014where love is the ultimate bet.", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Bets and Bridal Veils", "url": "/novels/bets-and-bridal-veils/"}, {"author": "Unknown Author", "chapters": 507, "cover_url": "/covers/runaway-heiress-reborn-crushing-ceo-ex-ScreenShot_2025-11-24_110632_634.png", "description": "As the invisible wife of tech tycoon Alexander, I endured his cold disdain for years. But when he gifted his mistress the jewels I craved, I served divorce papers and reclaimed my crown as AI\u0027s...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Runaway Heiress Reborn\uff1a Crushing CEO Ex", "url": "/novels/runaway-heiress-reborn-crushing-ceo-ex/"}, {"author": "Unknown Author", "chapters": 500, "cover_url": "/covers/the-billionaires-bargain-bridescorned-heiress-strikes-back-ScreenShot_2025-11-24_110646_613.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "The Billionaire\u0027s Bargain Bride\uff1aScorned Heiress Strikes Back", "url": "/novels/the-billionaires-bargain-bridescorned-heiress-strikes-back/"}, {"author": "Unknown Author", "chapters": 500, "cover_url": "/covers/after-i-leftbillionaire-ex-hunts-me-worldwide-ScreenShot_2025-11-24_104030_729.png", "description": "For six years I was Nathan Evans\u2019s invisible mistress, designing jewels for his socialite fianc\u00e9e. Now my hidden inheritance reveals I\u2019m the true heiress. With his twins in my womb, I\u2019ll melt his...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "After I Left\uff0cBillionaire Ex Hunts Me Worldwide", "url": "/novels/after-i-leftbillionaire-ex-hunts-me-worldwide/"}, {"author": "Unknown Author", "chapters": 500, "cover_url": "/covers/ceos-ex-wife-strikes-back-ScreenShot_2025-11-24_110520_714.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "CEO\u0027s Ex-Wife Strikes Back", "url": "/novels/ceos-ex-wife-strikes-back/"}, {"author": "Unknown Author", "chapters": 487, "cover_url": "/covers/veiled-vows-the-billionaires-vendetta-wechat_2025-06-24_152713_568.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Veiled Vows The Billionaire\u0027s Vendetta", "url": "/novels/veiled-vows-the-billionaires-vendetta/"}, {"author": "Unknown Author", "chapters": 482, "cover_url": "/covers/bracelet-of-lies-wechat_2025-06-25_121012_788.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Bracelet of Lies", "url": "/novels/bracelet-of-lies/"}, {"author": "Unknown Author", "chapters": 356, "cover_url": "/covers/my-weak-wife-is-a-real-goddess1-wechat_2025-09-23_141834_760.png", "description": "My weak wife is a real goddess (Lucille Jules and joseph) novel read online free Lucille Jules is one of the skilled female assassins, after dying due to a malicious conspiracy from her companion and...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "My Weak Wife Is a Real Goddess1", "url": "/novels/my-weak-wife-is-a-real-goddess1/"}, {"author": "Unknown Author", "chapters": 322, "cover_url": "/covers/heirs-of-vengeance-the-ceos-little-cupids-wechat_2025-06-24_155654_417.png", "description": "\"Left bleeding at the altar, Serena rebuilds her empire\u2014until billionaire twins appoint her as mommy. Can she trust their guarded CEO father? Or will old enemies destroy their second chance?\"\n********", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Heirs of Vengeance The CEO\u0027s Little Cupids", "url": "/novels/heirs-of-vengeance-the-ceos-little-cupids/"}, {"author": "Unknown Author", "chapters": 310, "cover_url": "/covers/rebirth-the-crimson-vow-wechat_2025-06-24_142318_178.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Rebirth The Crimson Vow", "url": "/novels/rebirth-the-crimson-vow/"}, {"author": "Unknown Author", "chapters": 303, "cover_url": "/covers/the-poison-in-his-kiss-wechat_2025-06-24_134444_629.png", "description": "Trapped in a gilded cage of deception, Caroline discovers her \"loving\" husband\u2019s cure is a slow-acting poison. With her body failing and children in danger, she feigns weakness to uncover his affair...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "The Poison in His Kiss", "url": "/novels/the-poison-in-his-kiss/"}, {"author": "Unknown Author", "chapters": 300, "cover_url": "/covers/rise-of-the-billionaires-runaway-bride-ScreenShot_2025-11-24_110612_865.png", "description": "When I caught my CEO husband cheating with his childhood sweetheart, I walked away\u2014until he refused our divorce. Now I\u2019m reclaiming my fashion empire, but his ruthless rival offers a dangerous...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Rise of The Billionaire\u0027s Runaway Bride", "url": "/novels/rise-of-the-billionaires-runaway-bride/"}, {"author": "Unknown Author", "chapters": 257, "cover_url": "/covers/rejected-luna-untamed-desire-of-the-lycan-alpha-\u56fe\u7247.jpg", "description": "\u201cI, Dominic Cherith, reject you, Inez Sinclair, as my mate. A lying, traitorous tramp like you has no right to become my mate and the Luna of this pack.\u201d\nAs a half shifter, Inez Sinclair had hoped...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Rejected Luna Untamed Desire Of The Lycan Alpha", "url": "/novels/rejected-luna-untamed-desire-of-the-lycan-alpha/"}, {"author": "Unknown Author", "chapters": 248, "cover_url": "/covers/heartbreak-billionairehe-should-never-have-let-go-\u4e66\u7c4d\u5c01\u9762.png", "description": "Sunlit hours found their affection glimmering while moonlit nights ignited reckless desire. But when Brandon learned his beloved might last only half a year, he coolly handed Millie divorce papers,...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Heartbreak Billionaire\uff1aHe should never have Let Go", "url": "/novels/heartbreak-billionairehe-should-never-have-let-go/"}, {"author": "Unknown Author", "chapters": 246, "cover_url": "/covers/beneath-the-ceos-cold-embrace-wechat_2025-06-24_154128_605.png", "description": "Branded a murderer\u0027s daughter, Victoria sells her body to a ruthless CEO for survival. Trapped between his cruel obsession and a vengeful fianc\u00e9e, she fights to uncover a family secret. Can she...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Beneath the CEO\u0027s Cold Embrace", "url": "/novels/beneath-the-ceos-cold-embrace/"}, {"author": "Unknown Author", "chapters": 243, "cover_url": "/covers/scalpel-and-moonlight-wechat_2025-06-24_152341_227.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Scalpel and Moonlight", "url": "/novels/scalpel-and-moonlight/"}, {"author": "Unknown Author", "chapters": 213, "cover_url": "/covers/crescent-bloodline-volcanic-throne-wechat_2025-06-25_131516_839.png", "description": "\"When her island paradise erupts in flames, priestess Loiza must lead 10,000 werewolf survivors to a hostile ally\u2019s territory. As their new Alpha forged in fire, she discovers her fated mate\u2014their...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Crescent Bloodline Volcanic Throne", "url": "/novels/crescent-bloodline-volcanic-throne/"}, {"author": "Unknown Author", "chapters": 178, "cover_url": "/covers/bound-by-blood-and-shadows-wechat_2025-06-25_141457_956.png", "description": "\"To save her family, Zezi surrendered to the Vampire King\u2014her fated mate. Now trapped in a gilded cage, she must defy his dark allure before his bite destroys her wolf soul. But when he threatens her...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Bound by Blood and Shadows", "url": "/novels/bound-by-blood-and-shadows/"}, {"author": "Unknown Author", "chapters": 175, "cover_url": "/covers/his-secret-heir-and-her-vengeance-wechat_2025-06-24_151820_082.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "His Secret Heir and Her Vengeance", "url": "/novels/his-secret-heir-and-her-vengeance/"}, {"author": "Unknown Author", "chapters": 175, "cover_url": "/covers/scarlet-resilience-wechat_2025-06-23_154050_813.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Scarlet Resilience", "url": "/novels/scarlet-resilience/"}, {"author": "Unknown Author", "chapters": 174, "cover_url": "/covers/reign-of-the-reborn-luna-wechat_2025-06-24_145024_475.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Reign of the Reborn Luna", "url": "/novels/reign-of-the-reborn-luna/"}, {"author": "Unknown Author", "chapters": 169, "cover_url": "/covers/scarlet-vows-sapphire-wounds-wechat_2025-06-23_185241_073.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Scarlet Vows \u0026 Sapphire Wounds", "url": "/novels/scarlet-vows-sapphire-wounds/"}, {"author": "Unknown Author", "chapters": 144, "cover_url": "/covers/embers-of-the-guilty-wechat_2025-06-24_142642_574.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Embers of the Guilty", "url": "/novels/embers-of-the-guilty/"}, {"author": "Unknown Author", "chapters": 139, "cover_url": "/covers/veiled-in-emerald-temptation-wechat_2025-06-25_134455_387.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Veiled in Emerald Temptation", "url": "/novels/veiled-in-emerald-temptation/"}, {"author": "Unknown Author", "chapters": 138, "cover_url": "/covers/scarlet-shield-wechat_2025-06-23_161022_494.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Scarlet Shield", "url": "/novels/scarlet-shield/"}, {"author": "Unknown Author", "chapters": 134, "cover_url": "/covers/blood-born-fury-wechat_2025-06-25_133854_870.png", "description": "A government hunter discovers she\u2019s the prey. Unleashing long-buried powers, Ariya must confront her monstrous lineage and a deadly conspiracy that destroyed her family\u2014before her own fury consumes...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Blood Born Fury", "url": "/novels/blood-born-fury/"}, {"author": "Unknown Author", "chapters": 119, "cover_url": "/covers/throne-of-starlight-and-scars-wechat_2025-06-25_134942_252.png", "description": "\"Sacrificed to save her family, Aeliana becomes the captive of Tharx\u2014the galaxy\u0027s most feared ruler. In his icy fortress, she unravels his brutal empire\u0027s secrets and ignites a forbidden connection....", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Throne of Starlight and Scars", "url": "/novels/throne-of-starlight-and-scars/"}, {"author": "Unknown Author", "chapters": 105, "cover_url": "/covers/scorned-ex-wife-queen-of-ashes-\u5c01\u9762.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "SCORNED EX WIFE  Queen Of Ashes", "url": "/novels/scorned-ex-wife-queen-of-ashes/"}, {"author": "Unknown Author", "chapters": 104, "cover_url": "/covers/too-late-for-regret-the-genius-heiress-who-shines-\u5c01\u9762\u56fe\u7247.png", "description": "Blinded in a crash, Cary was rejected by every socialite\u2014except Evelina, who married him without hesitation. Three years later, he regained his sight and ended their marriage. \"We\u2019ve already lost so...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Too Late For Regret The Genius Heiress Who Shines", "url": "/novels/too-late-for-regret-the-genius-heiress-who-shines/"}, {"author": "Unknown Author", "chapters": 101, "cover_url": "/covers/the-queen-returns-pampered-by-her-three-powerhouse-brothers-\u4e66\u7c4d\u5c01\u9762.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "The Queen Returns Pampered By Her Three Powerhouse Brothers", "url": "/novels/the-queen-returns-pampered-by-her-three-powerhouse-brothers/"}, {"author": "Unknown Author", "chapters": 101, "cover_url": "/covers/forbidden-heir-wechat_2025-06-25_135551_095.png", "description": "A small-town teacher inherits a billionaire\u2019s fortune, only to unravel deadly secrets and an illicit bond with her vengeful half-brother. Can they survive the legacy of lies?", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Forbidden Heir", "url": "/novels/forbidden-heir/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/the-last-spirit-wolf-\u4e66\u7c4d\u5c01\u9762.png", "description": "\u201cINCOMING! 10 Injured Wolves and 3 Lycans! \u201c Sophie, my bestie, our alpha yells in my head \u201cLYCANS?! Did you just say LYCANS?! \u201cYes Vera! They are coming! Get your people ready.\u201d I couldn\u2019t believe...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "The Last Spirit Wolf", "url": "/novels/the-last-spirit-wolf/"}, {"author": "Unknown Author", "chapters": 99, "cover_url": "/covers/moonfire-eclipse-true-mate-prophecy-wechat_2025-06-25_131057_939.png", "description": "Fated to ignite a forbidden bond, Lucas\u2014a future Alpha\u2014defies tradition for Amelia, an outcast with a lethal secret. As ancient prophecies awaken and traitors close in, their love may save their...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Moonfire Eclipse True Mate Prophecy", "url": "/novels/moonfire-eclipse-true-mate-prophecy/"}, {"author": "Unknown Author", "chapters": 99, "cover_url": "/covers/alphas-cursed-mate-the-rogue-heir-wechat_2025-06-24_154444_761.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Alpha\u0027s Cursed Mate The Rogue Heir", "url": "/novels/alphas-cursed-mate-the-rogue-heir/"}, {"author": "Unknown Author", "chapters": 99, "cover_url": "/covers/the-unwanted-daughters-alpha-king-\u5c01\u9762.png", "description": "The door behind me opened. Alpha Adrian was smiling, looking at the man now standing before us both, but his face fell the second his eyes landed on me, shock and disgust filling his gaze. \u2018Alpha...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "The Unwanted Daughter\u0027s Alpha King", "url": "/novels/the-unwanted-daughters-alpha-king/"}, {"author": "Unknown Author", "chapters": 98, "cover_url": "/covers/lunar-vow-of-scorned-blood-wechat_2025-06-25_143116_641.png", "description": "\"I reject you, human.\" Alpha heir Dwayne\u0027s public humiliation of his mate Klaire shatters their bond. But when she resurfaces as silver-haired royalty with lethal secrets, he must claw through war,...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Lunar Vow of Scorned Blood", "url": "/novels/lunar-vow-of-scorned-blood/"}, {"author": "Unknown Author", "chapters": 94, "cover_url": "/covers/soulbound-whispers-of-the-fallen-temple-wechat_2025-06-24_144654_529.png", "description": "Princess Volencia would surrender her crown to save her people\u2014until a stranger with a possessed sword shatters her fate. To break an ancient curse, they must unravel a prophecy binding gods and...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Soulbound Whispers of the Fallen Temple", "url": "/novels/soulbound-whispers-of-the-fallen-temple/"}, {"author": "Unknown Author", "chapters": 91, "cover_url": "/covers/beneath-the-executives-mask-wechat_2025-06-24_153719_533.png", "description": "\"When fiery secretary Amanda uncovers her CEO\u2019s cruel past, their war ignites. Forced into his world of power plays and fake marriages, she battles his control while exposing his closest ally\u2019s...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Beneath the Executive\u0027s Mask", "url": "/novels/beneath-the-executives-mask/"}, {"author": "Unknown Author", "chapters": 90, "cover_url": "/covers/kings-captive-bloom-wechat_2025-06-24_151103_621.png", "description": "Cursed with no magic and a deadly illness, Princess Lily is mistaken for her powerful sister and kidnapped by a monstrous king. As political games threaten her life, her captor becomes an unlikely...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "King\u0027s Captive Bloom", "url": "/novels/kings-captive-bloom/"}, {"author": "Unknown Author", "chapters": 89, "cover_url": "/covers/thornes-redemption-wechat_2025-06-24_155329_552.png", "description": "Sparks fly when defiant Amaris dumps coffee on her new boss\u2014ruthless CEO Caleb Thorne. Forced to become his secretary, their battle of wills ignites electric tension. But when her friend is kidnapped...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "THORNE\u0027S REDEMPTION", "url": "/novels/thornes-redemption/"}, {"author": "Unknown Author", "chapters": 88, "cover_url": "/covers/crimson-vendettas-wechat_2025-06-25_133418_458.png", "description": "\"Her hand was sold to settle a war. His heart vowed to destroy her family.\nForced into a marriage with Miami\u2019s ruthless mafia king, Alessandra becomes both pawn and obsession. As rival syndicates...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Crimson Vendettas", "url": "/novels/crimson-vendettas/"}, {"author": "Unknown Author", "chapters": 81, "cover_url": "/covers/abyssal-bonds-wechat_2025-06-23_183959_873.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Abyssal Bonds", "url": "/novels/abyssal-bonds/"}, {"author": "Unknown Author", "chapters": 81, "cover_url": "/covers/rejected-by-the-alpha-claimed-by-the-pack-wechat_2025-06-24_153301_339.png", "description": "\"Branded a traitor\u0027s daughter, Claudia survived abuse as a slave. When her fated Alpha mate betrayed her, she shattered their bond. Now reborn as a silver-haired witch, she returns to claim...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Rejected by the Alpha, Claimed by the Pack", "url": "/novels/rejected-by-the-alpha-claimed-by-the-pack/"}, {"author": "Unknown Author", "chapters": 80, "cover_url": "/covers/royal-secret-the-lycan-kings-bargain-wechat_2025-06-24_132847_995.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Royal Secret The Lycan King\u0027s Bargain", "url": "/novels/royal-secret-the-lycan-kings-bargain/"}, {"author": "Unknown Author", "chapters": 79, "cover_url": "/covers/blood-oath-vendetta-wechat_2025-06-25_121424_184.png", "description": "When artist Isabella returns to her mafia family after her brother\u2019s mysterious death, she forges a deadly alliance with enigmatic Enzo Romano. Trapped in a web of betrayal, they uncover a conspiracy...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Blood Oath Vendetta", "url": "/novels/blood-oath-vendetta/"}, {"author": "Unknown Author", "chapters": 77, "cover_url": "/covers/chronicles-of-the-arcane-academy-wechat_2025-06-25_123025_111.png", "description": "\"When a human girl unlocks dormant magic, she enters a hidden academy of vampires and werewolves. To survive forbidden romance and unravel a conspiracy threatening supernatural realms, she must...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Chronicles of the Arcane Academy", "url": "/novels/chronicles-of-the-arcane-academy/"}, {"author": "Unknown Author", "chapters": 76, "cover_url": "/covers/crimson-legacy-wechat_2025-06-23_154736_347.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "CRIMSON LEGACY", "url": "/novels/crimson-legacy/"}, {"author": "Unknown Author", "chapters": 69, "cover_url": "/covers/tangled-vows-wechat_2025-06-24_135123_743.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Tangled Vows", "url": "/novels/tangled-vows/"}, {"author": "Unknown Author", "chapters": 68, "cover_url": "/covers/sightless-redemption-wechat_2025-06-25_135955_930.png", "description": "A blind billionaire\u0027s marriage of convenience ignites unexpected passion. But when deadly schemes from his past resurface, can their fragile bond survive? For Lisa, protecting her sister means...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Sightless Redemption", "url": "/novels/sightless-redemption/"}, {"author": "Unknown Author", "chapters": 66, "cover_url": "/covers/contractual-hearts-the-billionaires-redemption-wechat_2025-06-23_184651_208.png", "description": "Sherry Hue, a genius stock trader drowning in family debts, signs a 90-day marriage contract with enigmatic billionaire Bryan Ruger\u2014$100,000 weekly for playing his devoted wife. But their icy...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Contractual Hearts The Billionaire\u0027s Redemption", "url": "/novels/contractual-hearts-the-billionaires-redemption/"}, {"author": "Unknown Author", "chapters": 61, "cover_url": "/covers/the-diamond-identity-wechat_2025-06-23_155358_089.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "The Diamond Identity", "url": "/novels/the-diamond-identity/"}, {"author": "Unknown Author", "chapters": 61, "cover_url": "/covers/bound-to-the-billionaires-heir-wechat_2025-06-25_143215_103.png", "description": "Drugged and betrayed on her birthday, Mia wakes up violated by billionaire heir Ethan Joshua. Pregnant and fleeing her family\u0027s treachery, she\u0027s thrust back into his world. Trapped in a gilded cage...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "ceo", "billionaire"], "title": "Bound to the Billionaire\u0027s Heir", "url": "/novels/bound-to-the-billionaires-heir/"}, {"author": "Unknown Author", "chapters": 54, "cover_url": "/covers/echoes-of-the-feral-wechat_2025-06-25_130122_938.png", "description": "Riley discovers she\u0027s not human, but an ancient power awakening within her. Torn between a wolf who saved her life and one offering dark truths, she must embrace her true nature before it consumes...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Echoes of the Feral", "url": "/novels/echoes-of-the-feral/"}, {"author": "Unknown Author", "chapters": 50, "cover_url": "/covers/shadows-of-the-reborn-luna-wechat_2025-06-25_142433_588.png", "description": "\"Declared dead, Valentina awakens as an Alpha\u0027s wife with no memory. Trapped in a world of wolves and dark rituals, she must unravel her forgotten past before her husband\u0027s secrets\u2014and her own...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "SHADOWS OF THE REBORN LUNA", "url": "/novels/shadows-of-the-reborn-luna/"}, {"author": "Unknown Author", "chapters": 47, "cover_url": "/covers/lunas-defective-redemption-wechat_2025-06-24_133854_030.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Luna\u0027s Defective Redemption", "url": "/novels/lunas-defective-redemption/"}, {"author": "Unknown Author", "chapters": 44, "cover_url": "/covers/bloodline-captive-russian-mafia-heirs-wechat_2025-06-23_155957_916.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Bloodline Captive Russian Mafia Heirs", "url": "/novels/bloodline-captive-russian-mafia-heirs/"}, {"author": "Unknown Author", "chapters": 43, "cover_url": "/covers/veilborn-wechat_2025-06-25_135222_698.png", "description": "An outcast mage holds the key to a dying veil between worlds. Hunted by those who crave her power, she must master forbidden magic to prevent reality\u2019s collapse\u2014or become the weapon that destroys it.", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "VEILBORN", "url": "/novels/veilborn/"}, {"author": "Unknown Author", "chapters": 39, "cover_url": "/covers/marked-by-the-enemy-wechat_2025-06-24_121834_842.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Marked by the Enemy", "url": "/novels/marked-by-the-enemy/"}, {"author": "Unknown Author", "chapters": 31, "cover_url": "/covers/bound-by-shadow-claimed-by-soul-wechat_2025-06-25_125716_153.png", "description": "Cursed to forget his mate, a werewolf Beta battles dark magic devouring his soul. As his human lover lies dying in a hidden sanctuary, their shattered bond ignites a race against time. To survive,...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Bound by Shadow, Claimed by Soul", "url": "/novels/bound-by-shadow-claimed-by-soul/"}, {"author": "Unknown Author", "chapters": 29, "cover_url": "/covers/psis-asylum-wechat_2025-06-25_131857_929.png", "description": "\"In a world where teen survivors of a deadly plague develop dangerous powers, 16-year-old Ruby hides her mind-control ability to survive a brutal camp. Rescued by rebels with dark secrets, she must...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Psi\u0027s Asylum", "url": "/novels/psis-asylum/"}, {"author": "Unknown Author", "chapters": 21, "cover_url": "/covers/lunas-twin-alphas-curse-of-the-blood-moon-wechat_2025-06-24_123211_426.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Luna\u2019s Twin Alphas Curse of the Blood Moon", "url": "/novels/lunas-twin-alphas-curse-of-the-blood-moon/"}, {"author": "Unknown Author", "chapters": 20, "cover_url": "/covers/lunas-divine-mark-wechat_2025-06-25_130743_740.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Luna\u2019s Divine Mark", "url": "/novels/lunas-divine-mark/"}, {"author": "Unknown Author", "chapters": 10, "cover_url": "/covers/my-billionaire-wifes-deadly-affair-wechat_2025-09-18_145056_613.png", "description": "...", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "My Billionaire Wife\u2019s Deadly Affair", "url": "/novels/my-billionaire-wifes-deadly-affair/"}, {"author": "Unknown Author", "chapters": 9, "cover_url": "/covers/my-husband-sold-me-to-his-boss-wechat_2025-09-18_204220_834.png", "description": "My husband drugged me and sent me to his boss\u2019s hotel room\u2026 but what happened next was even CRAZIER", "last_updated": "2025-12-08", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "My Husband Sold Me to His Boss", "url": "/novels/my-husband-sold-me-to-his-boss/"}]
+        [{"author": "Unknown Author", "chapters": 1373, "cover_url": "/covers/between-ruin-and-resolve-my-ex-husbands-regret1-wechat_2025-09-23_141907_738.png", "description": "Noah\u2019s eyes darkened with desire as he observed her yielding, his actions becoming bolder and less restrained.\nJust as Sadie was about to regain her composure, she gasped softly, her plea laced with...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Between Ruin And Resolve My Ex-Husband\u2019s Regret1", "url": "/novels/between-ruin-and-resolve-my-ex-husbands-regret1/"}, {"author": "Unknown Author", "chapters": 1208, "cover_url": "/covers/the-richest-billionaire-is-my-accidental-husband-\u56fe\u7247.jpg", "description": "[The country finally matched me with a partner\u2014the richest man in the world.]\nYe Xingguang, dumped on the day of her graduation, stormed to the civil department to get in the queue for matchmaking,...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "The Richest Billionaire is My Accidental Husband", "url": "/novels/the-richest-billionaire-is-my-accidental-husband/"}, {"author": "Unknown Author", "chapters": 1031, "cover_url": "/covers/the-hidden-princess-at-all-boys-alpha-academy-\u56fe\u7247.jpg", "description": "(Sequel of Accidental Surrogate For Alpha. Can be read alone.) Ariel was looking forward to her arranged marriage as the perfect princess, only to discover that she was being seen merely as a...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "The Hidden Princess At All-Boys Alpha Academy", "url": "/novels/the-hidden-princess-at-all-boys-alpha-academy/"}, {"author": "Unknown Author", "chapters": 998, "cover_url": "/covers/his-first-love-returned-during-my-pregnancy-ScreenShot_2025-11-24_110553_734.png", "description": "I thought marrying Alexander Hamilton was fate\u2014we shared \u0027Evelyn\u0027 like a vow. But when his pregnant \u0027Annabelle\u0027 returned, I learned I was just a placeholder. After the miscarriage he demanded, I walk...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "His First Love Returned During My Pregnancy", "url": "/novels/his-first-love-returned-during-my-pregnancy/"}, {"author": "Unknown Author", "chapters": 786, "cover_url": "/covers/revenge-in-diamonds-wechat_2025-06-24_145825_429.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Revenge in Diamonds", "url": "/novels/revenge-in-diamonds/"}, {"author": "Unknown Author", "chapters": 777, "cover_url": "/covers/mistaken-midnight-with-the-ceo-wechat_2025-06-25_132314_345.png", "description": "One wild night, one wrong bed. When intern Layla wakes up beside her ex\u0027s uncle\u2014the formidable CEO Samuel\u2014their accidental passion ignites a war of pride and desire. In a world of corporate schemes...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "ceo", "billionaire"], "title": "Mistaken Midnight with the CEO", "url": "/novels/mistaken-midnight-with-the-ceo/"}, {"author": "Unknown Author", "chapters": 704, "cover_url": "/covers/seducing-my-exs-father-in-law-wechat_2025-09-16_145815_254.png", "description": "Judy\u0027s fated mate abandons her for power. Heartbroken, she becomes entangled with a powerful Lycan, battling betrayal, forbidden attraction, and a desperate fight to save her family.", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Seducing My Ex\u2019s Father In Law", "url": "/novels/seducing-my-exs-father-in-law/"}, {"author": "Unknown Author", "chapters": 611, "cover_url": "/covers/alphas-mark-lunas-heart-wechat_2025-09-17_140910_227.png", "description": "The pack thinks she\u2019s just a tattoo artist.\nThe rogues want her genius brain.\nBut the Alpha-heir wants the curve of her hip under his claws\u2014because only she can ink the mark that will bind his soul\u2026...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Alpha\u2019s Mark, Luna\u2019s Heart", "url": "/novels/alphas-mark-lunas-heart/"}, {"author": "Unknown Author", "chapters": 545, "cover_url": "/covers/phantoms-heir-wechat_2025-06-25_143547_859.png", "description": "Trapped on a sentient island, Acacia is imprisoned in a castle that feeds her, clothes her\u2014and impregnates her. With time running out before the birth, she must unravel a primal ritual binding her to...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Phantom\u2019s Heir", "url": "/novels/phantoms-heir/"}, {"author": "Unknown Author", "chapters": 544, "cover_url": "/covers/keep-distance-mr-ceo-\u56fe\u7247.jpg", "description": "This text has been published under the name \u201cAmidst the Falling Stars\u201d.\n\u201cPresident, I\u0027ve found a little Baozi who looks a lot like you.\u201d\n\u201cPresident, Baozi says he doesn\u0027t have a real dad; he\u0027s a...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ocean", "underwater", "marine"], "title": "Keep Distance, Mr. CEO!", "url": "/novels/keep-distance-mr-ceo/"}, {"author": "Unknown Author", "chapters": 533, "cover_url": "/covers/taking-alpha-twins-away-after-divorce-\u56fe\u7247.jpg", "description": "Discover the romance story in Taking Alpha\u0027s Twins Away After Divorce novel by Internet, a gripping tale of love, betrayal, and empowerment. You can read Taking Alpha\u0027s Twins Away After Divorce novel...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Taking Alpha Twins Away After Divorce", "url": "/novels/taking-alpha-twins-away-after-divorce/"}, {"author": "Unknown Author", "chapters": 512, "cover_url": "/covers/bets-and-bridal-veils-wechat_2025-06-24_155230_688.png", "description": "She gambled her marriage to save her family. He vowed to break her pride. But when her royal flush identity surfaces, their game turns lethal\u2014where love is the ultimate bet.", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Bets and Bridal Veils", "url": "/novels/bets-and-bridal-veils/"}, {"author": "Unknown Author", "chapters": 507, "cover_url": "/covers/runaway-heiress-reborn-crushing-ceo-ex-ScreenShot_2025-11-24_110632_634.png", "description": "As the invisible wife of tech tycoon Alexander, I endured his cold disdain for years. But when he gifted his mistress the jewels I craved, I served divorce papers and reclaimed my crown as AI\u0027s...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Runaway Heiress Reborn\uff1a Crushing CEO Ex", "url": "/novels/runaway-heiress-reborn-crushing-ceo-ex/"}, {"author": "Unknown Author", "chapters": 500, "cover_url": "/covers/the-billionaires-bargain-bridescorned-heiress-strikes-back-ScreenShot_2025-11-24_110646_613.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "The Billionaire\u0027s Bargain Bride\uff1aScorned Heiress Strikes Back", "url": "/novels/the-billionaires-bargain-bridescorned-heiress-strikes-back/"}, {"author": "Unknown Author", "chapters": 500, "cover_url": "/covers/after-i-leftbillionaire-ex-hunts-me-worldwide-ScreenShot_2025-11-24_104030_729.png", "description": "For six years I was Nathan Evans\u2019s invisible mistress, designing jewels for his socialite fianc\u00e9e. Now my hidden inheritance reveals I\u2019m the true heiress. With his twins in my womb, I\u2019ll melt his...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "After I Left\uff0cBillionaire Ex Hunts Me Worldwide", "url": "/novels/after-i-leftbillionaire-ex-hunts-me-worldwide/"}, {"author": "Unknown Author", "chapters": 500, "cover_url": "/covers/ceos-ex-wife-strikes-back-ScreenShot_2025-11-24_110520_714.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "CEO\u0027s Ex-Wife Strikes Back", "url": "/novels/ceos-ex-wife-strikes-back/"}, {"author": "Unknown Author", "chapters": 487, "cover_url": "/covers/veiled-vows-the-billionaires-vendetta-wechat_2025-06-24_152713_568.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Veiled Vows The Billionaire\u0027s Vendetta", "url": "/novels/veiled-vows-the-billionaires-vendetta/"}, {"author": "Unknown Author", "chapters": 482, "cover_url": "/covers/bracelet-of-lies-wechat_2025-06-25_121012_788.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Bracelet of Lies", "url": "/novels/bracelet-of-lies/"}, {"author": "Unknown Author", "chapters": 356, "cover_url": "/covers/my-weak-wife-is-a-real-goddess1-wechat_2025-09-23_141834_760.png", "description": "My weak wife is a real goddess (Lucille Jules and joseph) novel read online free Lucille Jules is one of the skilled female assassins, after dying due to a malicious conspiracy from her companion and...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "My Weak Wife Is a Real Goddess1", "url": "/novels/my-weak-wife-is-a-real-goddess1/"}, {"author": "Unknown Author", "chapters": 322, "cover_url": "/covers/heirs-of-vengeance-the-ceos-little-cupids-wechat_2025-06-24_155654_417.png", "description": "\"Left bleeding at the altar, Serena rebuilds her empire\u2014until billionaire twins appoint her as mommy. Can she trust their guarded CEO father? Or will old enemies destroy their second chance?\"\n********", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Heirs of Vengeance The CEO\u0027s Little Cupids", "url": "/novels/heirs-of-vengeance-the-ceos-little-cupids/"}, {"author": "Unknown Author", "chapters": 310, "cover_url": "/covers/rebirth-the-crimson-vow-wechat_2025-06-24_142318_178.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Rebirth The Crimson Vow", "url": "/novels/rebirth-the-crimson-vow/"}, {"author": "Unknown Author", "chapters": 303, "cover_url": "/covers/the-poison-in-his-kiss-wechat_2025-06-24_134444_629.png", "description": "Trapped in a gilded cage of deception, Caroline discovers her \"loving\" husband\u2019s cure is a slow-acting poison. With her body failing and children in danger, she feigns weakness to uncover his affair...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "The Poison in His Kiss", "url": "/novels/the-poison-in-his-kiss/"}, {"author": "Unknown Author", "chapters": 300, "cover_url": "/covers/rise-of-the-billionaires-runaway-bride-ScreenShot_2025-11-24_110612_865.png", "description": "When I caught my CEO husband cheating with his childhood sweetheart, I walked away\u2014until he refused our divorce. Now I\u2019m reclaiming my fashion empire, but his ruthless rival offers a dangerous...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Rise of The Billionaire\u0027s Runaway Bride", "url": "/novels/rise-of-the-billionaires-runaway-bride/"}, {"author": "Unknown Author", "chapters": 257, "cover_url": "/covers/rejected-luna-untamed-desire-of-the-lycan-alpha-\u56fe\u7247.jpg", "description": "\u201cI, Dominic Cherith, reject you, Inez Sinclair, as my mate. A lying, traitorous tramp like you has no right to become my mate and the Luna of this pack.\u201d\nAs a half shifter, Inez Sinclair had hoped...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Rejected Luna Untamed Desire Of The Lycan Alpha", "url": "/novels/rejected-luna-untamed-desire-of-the-lycan-alpha/"}, {"author": "Unknown Author", "chapters": 248, "cover_url": "/covers/heartbreak-billionairehe-should-never-have-let-go-\u4e66\u7c4d\u5c01\u9762.png", "description": "Sunlit hours found their affection glimmering while moonlit nights ignited reckless desire. But when Brandon learned his beloved might last only half a year, he coolly handed Millie divorce papers,...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Heartbreak Billionaire\uff1aHe should never have Let Go", "url": "/novels/heartbreak-billionairehe-should-never-have-let-go/"}, {"author": "Unknown Author", "chapters": 246, "cover_url": "/covers/beneath-the-ceos-cold-embrace-wechat_2025-06-24_154128_605.png", "description": "Branded a murderer\u0027s daughter, Victoria sells her body to a ruthless CEO for survival. Trapped between his cruel obsession and a vengeful fianc\u00e9e, she fights to uncover a family secret. Can she...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Beneath the CEO\u0027s Cold Embrace", "url": "/novels/beneath-the-ceos-cold-embrace/"}, {"author": "Unknown Author", "chapters": 243, "cover_url": "/covers/scalpel-and-moonlight-wechat_2025-06-24_152341_227.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Scalpel and Moonlight", "url": "/novels/scalpel-and-moonlight/"}, {"author": "Unknown Author", "chapters": 213, "cover_url": "/covers/crescent-bloodline-volcanic-throne-wechat_2025-06-25_131516_839.png", "description": "\"When her island paradise erupts in flames, priestess Loiza must lead 10,000 werewolf survivors to a hostile ally\u2019s territory. As their new Alpha forged in fire, she discovers her fated mate\u2014their...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Crescent Bloodline Volcanic Throne", "url": "/novels/crescent-bloodline-volcanic-throne/"}, {"author": "Unknown Author", "chapters": 178, "cover_url": "/covers/bound-by-blood-and-shadows-wechat_2025-06-25_141457_956.png", "description": "\"To save her family, Zezi surrendered to the Vampire King\u2014her fated mate. Now trapped in a gilded cage, she must defy his dark allure before his bite destroys her wolf soul. But when he threatens her...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Bound by Blood and Shadows", "url": "/novels/bound-by-blood-and-shadows/"}, {"author": "Unknown Author", "chapters": 175, "cover_url": "/covers/his-secret-heir-and-her-vengeance-wechat_2025-06-24_151820_082.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "His Secret Heir and Her Vengeance", "url": "/novels/his-secret-heir-and-her-vengeance/"}, {"author": "Unknown Author", "chapters": 175, "cover_url": "/covers/scarlet-resilience-wechat_2025-06-23_154050_813.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Scarlet Resilience", "url": "/novels/scarlet-resilience/"}, {"author": "Unknown Author", "chapters": 174, "cover_url": "/covers/reign-of-the-reborn-luna-wechat_2025-06-24_145024_475.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Reign of the Reborn Luna", "url": "/novels/reign-of-the-reborn-luna/"}, {"author": "Unknown Author", "chapters": 169, "cover_url": "/covers/scarlet-vows-sapphire-wounds-wechat_2025-06-23_185241_073.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Scarlet Vows \u0026 Sapphire Wounds", "url": "/novels/scarlet-vows-sapphire-wounds/"}, {"author": "Unknown Author", "chapters": 144, "cover_url": "/covers/embers-of-the-guilty-wechat_2025-06-24_142642_574.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Embers of the Guilty", "url": "/novels/embers-of-the-guilty/"}, {"author": "Unknown Author", "chapters": 139, "cover_url": "/covers/veiled-in-emerald-temptation-wechat_2025-06-25_134455_387.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Veiled in Emerald Temptation", "url": "/novels/veiled-in-emerald-temptation/"}, {"author": "Unknown Author", "chapters": 138, "cover_url": "/covers/scarlet-shield-wechat_2025-06-23_161022_494.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Scarlet Shield", "url": "/novels/scarlet-shield/"}, {"author": "Unknown Author", "chapters": 134, "cover_url": "/covers/blood-born-fury-wechat_2025-06-25_133854_870.png", "description": "A government hunter discovers she\u2019s the prey. Unleashing long-buried powers, Ariya must confront her monstrous lineage and a deadly conspiracy that destroyed her family\u2014before her own fury consumes...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Blood Born Fury", "url": "/novels/blood-born-fury/"}, {"author": "Unknown Author", "chapters": 119, "cover_url": "/covers/throne-of-starlight-and-scars-wechat_2025-06-25_134942_252.png", "description": "\"Sacrificed to save her family, Aeliana becomes the captive of Tharx\u2014the galaxy\u0027s most feared ruler. In his icy fortress, she unravels his brutal empire\u0027s secrets and ignites a forbidden connection....", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Throne of Starlight and Scars", "url": "/novels/throne-of-starlight-and-scars/"}, {"author": "Unknown Author", "chapters": 105, "cover_url": "/covers/scorned-ex-wife-queen-of-ashes-\u5c01\u9762.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "SCORNED EX WIFE  Queen Of Ashes", "url": "/novels/scorned-ex-wife-queen-of-ashes/"}, {"author": "Unknown Author", "chapters": 104, "cover_url": "/covers/too-late-for-regret-the-genius-heiress-who-shines-\u5c01\u9762\u56fe\u7247.png", "description": "Blinded in a crash, Cary was rejected by every socialite\u2014except Evelina, who married him without hesitation. Three years later, he regained his sight and ended their marriage. \"We\u2019ve already lost so...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Too Late For Regret The Genius Heiress Who Shines", "url": "/novels/too-late-for-regret-the-genius-heiress-who-shines/"}, {"author": "Unknown Author", "chapters": 101, "cover_url": "/covers/the-queen-returns-pampered-by-her-three-powerhouse-brothers-\u4e66\u7c4d\u5c01\u9762.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "The Queen Returns Pampered By Her Three Powerhouse Brothers", "url": "/novels/the-queen-returns-pampered-by-her-three-powerhouse-brothers/"}, {"author": "Unknown Author", "chapters": 101, "cover_url": "/covers/forbidden-heir-wechat_2025-06-25_135551_095.png", "description": "A small-town teacher inherits a billionaire\u2019s fortune, only to unravel deadly secrets and an illicit bond with her vengeful half-brother. Can they survive the legacy of lies?", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Forbidden Heir", "url": "/novels/forbidden-heir/"}, {"author": "Unknown Author", "chapters": 100, "cover_url": "/covers/the-last-spirit-wolf-\u4e66\u7c4d\u5c01\u9762.png", "description": "\u201cINCOMING! 10 Injured Wolves and 3 Lycans! \u201c Sophie, my bestie, our alpha yells in my head \u201cLYCANS?! Did you just say LYCANS?! \u201cYes Vera! They are coming! Get your people ready.\u201d I couldn\u2019t believe...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "The Last Spirit Wolf", "url": "/novels/the-last-spirit-wolf/"}, {"author": "Unknown Author", "chapters": 99, "cover_url": "/covers/moonfire-eclipse-true-mate-prophecy-wechat_2025-06-25_131057_939.png", "description": "Fated to ignite a forbidden bond, Lucas\u2014a future Alpha\u2014defies tradition for Amelia, an outcast with a lethal secret. As ancient prophecies awaken and traitors close in, their love may save their...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Moonfire Eclipse True Mate Prophecy", "url": "/novels/moonfire-eclipse-true-mate-prophecy/"}, {"author": "Unknown Author", "chapters": 99, "cover_url": "/covers/alphas-cursed-mate-the-rogue-heir-wechat_2025-06-24_154444_761.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Alpha\u0027s Cursed Mate The Rogue Heir", "url": "/novels/alphas-cursed-mate-the-rogue-heir/"}, {"author": "Unknown Author", "chapters": 99, "cover_url": "/covers/the-unwanted-daughters-alpha-king-\u5c01\u9762.png", "description": "The door behind me opened. Alpha Adrian was smiling, looking at the man now standing before us both, but his face fell the second his eyes landed on me, shock and disgust filling his gaze. \u2018Alpha...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "The Unwanted Daughter\u0027s Alpha King", "url": "/novels/the-unwanted-daughters-alpha-king/"}, {"author": "Unknown Author", "chapters": 98, "cover_url": "/covers/lunar-vow-of-scorned-blood-wechat_2025-06-25_143116_641.png", "description": "\"I reject you, human.\" Alpha heir Dwayne\u0027s public humiliation of his mate Klaire shatters their bond. But when she resurfaces as silver-haired royalty with lethal secrets, he must claw through war,...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Lunar Vow of Scorned Blood", "url": "/novels/lunar-vow-of-scorned-blood/"}, {"author": "Unknown Author", "chapters": 94, "cover_url": "/covers/soulbound-whispers-of-the-fallen-temple-wechat_2025-06-24_144654_529.png", "description": "Princess Volencia would surrender her crown to save her people\u2014until a stranger with a possessed sword shatters her fate. To break an ancient curse, they must unravel a prophecy binding gods and...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Soulbound Whispers of the Fallen Temple", "url": "/novels/soulbound-whispers-of-the-fallen-temple/"}, {"author": "Unknown Author", "chapters": 91, "cover_url": "/covers/beneath-the-executives-mask-wechat_2025-06-24_153719_533.png", "description": "\"When fiery secretary Amanda uncovers her CEO\u2019s cruel past, their war ignites. Forced into his world of power plays and fake marriages, she battles his control while exposing his closest ally\u2019s...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Beneath the Executive\u0027s Mask", "url": "/novels/beneath-the-executives-mask/"}, {"author": "Unknown Author", "chapters": 90, "cover_url": "/covers/kings-captive-bloom-wechat_2025-06-24_151103_621.png", "description": "Cursed with no magic and a deadly illness, Princess Lily is mistaken for her powerful sister and kidnapped by a monstrous king. As political games threaten her life, her captor becomes an unlikely...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "King\u0027s Captive Bloom", "url": "/novels/kings-captive-bloom/"}, {"author": "Unknown Author", "chapters": 89, "cover_url": "/covers/thornes-redemption-wechat_2025-06-24_155329_552.png", "description": "Sparks fly when defiant Amaris dumps coffee on her new boss\u2014ruthless CEO Caleb Thorne. Forced to become his secretary, their battle of wills ignites electric tension. But when her friend is kidnapped...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "THORNE\u0027S REDEMPTION", "url": "/novels/thornes-redemption/"}, {"author": "Unknown Author", "chapters": 88, "cover_url": "/covers/crimson-vendettas-wechat_2025-06-25_133418_458.png", "description": "\"Her hand was sold to settle a war. His heart vowed to destroy her family.\nForced into a marriage with Miami\u2019s ruthless mafia king, Alessandra becomes both pawn and obsession. As rival syndicates...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Crimson Vendettas", "url": "/novels/crimson-vendettas/"}, {"author": "Unknown Author", "chapters": 81, "cover_url": "/covers/abyssal-bonds-wechat_2025-06-23_183959_873.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Abyssal Bonds", "url": "/novels/abyssal-bonds/"}, {"author": "Unknown Author", "chapters": 81, "cover_url": "/covers/rejected-by-the-alpha-claimed-by-the-pack-wechat_2025-06-24_153301_339.png", "description": "\"Branded a traitor\u0027s daughter, Claudia survived abuse as a slave. When her fated Alpha mate betrayed her, she shattered their bond. Now reborn as a silver-haired witch, she returns to claim...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Rejected by the Alpha, Claimed by the Pack", "url": "/novels/rejected-by-the-alpha-claimed-by-the-pack/"}, {"author": "Unknown Author", "chapters": 80, "cover_url": "/covers/royal-secret-the-lycan-kings-bargain-wechat_2025-06-24_132847_995.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Royal Secret The Lycan King\u0027s Bargain", "url": "/novels/royal-secret-the-lycan-kings-bargain/"}, {"author": "Unknown Author", "chapters": 79, "cover_url": "/covers/blood-oath-vendetta-wechat_2025-06-25_121424_184.png", "description": "When artist Isabella returns to her mafia family after her brother\u2019s mysterious death, she forges a deadly alliance with enigmatic Enzo Romano. Trapped in a web of betrayal, they uncover a conspiracy...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Blood Oath Vendetta", "url": "/novels/blood-oath-vendetta/"}, {"author": "Unknown Author", "chapters": 77, "cover_url": "/covers/chronicles-of-the-arcane-academy-wechat_2025-06-25_123025_111.png", "description": "\"When a human girl unlocks dormant magic, she enters a hidden academy of vampires and werewolves. To survive forbidden romance and unravel a conspiracy threatening supernatural realms, she must...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "Chronicles of the Arcane Academy", "url": "/novels/chronicles-of-the-arcane-academy/"}, {"author": "Unknown Author", "chapters": 76, "cover_url": "/covers/crimson-legacy-wechat_2025-06-23_154736_347.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "CRIMSON LEGACY", "url": "/novels/crimson-legacy/"}, {"author": "Unknown Author", "chapters": 69, "cover_url": "/covers/tangled-vows-wechat_2025-06-24_135123_743.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Tangled Vows", "url": "/novels/tangled-vows/"}, {"author": "Unknown Author", "chapters": 68, "cover_url": "/covers/sightless-redemption-wechat_2025-06-25_135955_930.png", "description": "A blind billionaire\u0027s marriage of convenience ignites unexpected passion. But when deadly schemes from his past resurface, can their fragile bond survive? For Lisa, protecting her sister means...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Sightless Redemption", "url": "/novels/sightless-redemption/"}, {"author": "Unknown Author", "chapters": 66, "cover_url": "/covers/contractual-hearts-the-billionaires-redemption-wechat_2025-06-23_184651_208.png", "description": "Sherry Hue, a genius stock trader drowning in family debts, signs a 90-day marriage contract with enigmatic billionaire Bryan Ruger\u2014$100,000 weekly for playing his devoted wife. But their icy...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["ceo", "billionaire", "contemporary"], "title": "Contractual Hearts The Billionaire\u0027s Redemption", "url": "/novels/contractual-hearts-the-billionaires-redemption/"}, {"author": "Unknown Author", "chapters": 61, "cover_url": "/covers/the-diamond-identity-wechat_2025-06-23_155358_089.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "The Diamond Identity", "url": "/novels/the-diamond-identity/"}, {"author": "Unknown Author", "chapters": 61, "cover_url": "/covers/bound-to-the-billionaires-heir-wechat_2025-06-25_143215_103.png", "description": "Drugged and betrayed on her birthday, Mia wakes up violated by billionaire heir Ethan Joshua. Pregnant and fleeing her family\u0027s treachery, she\u0027s thrust back into his world. Trapped in a gilded cage...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "ceo", "billionaire"], "title": "Bound to the Billionaire\u0027s Heir", "url": "/novels/bound-to-the-billionaires-heir/"}, {"author": "Unknown Author", "chapters": 54, "cover_url": "/covers/echoes-of-the-feral-wechat_2025-06-25_130122_938.png", "description": "Riley discovers she\u0027s not human, but an ancient power awakening within her. Torn between a wolf who saved her life and one offering dark truths, she must embrace her true nature before it consumes...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Echoes of the Feral", "url": "/novels/echoes-of-the-feral/"}, {"author": "Unknown Author", "chapters": 50, "cover_url": "/covers/shadows-of-the-reborn-luna-wechat_2025-06-25_142433_588.png", "description": "\"Declared dead, Valentina awakens as an Alpha\u0027s wife with no memory. Trapped in a world of wolves and dark rituals, she must unravel her forgotten past before her husband\u0027s secrets\u2014and her own...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "SHADOWS OF THE REBORN LUNA", "url": "/novels/shadows-of-the-reborn-luna/"}, {"author": "Unknown Author", "chapters": 47, "cover_url": "/covers/lunas-defective-redemption-wechat_2025-06-24_133854_030.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Luna\u0027s Defective Redemption", "url": "/novels/lunas-defective-redemption/"}, {"author": "Unknown Author", "chapters": 44, "cover_url": "/covers/bloodline-captive-russian-mafia-heirs-wechat_2025-06-23_155957_916.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Bloodline Captive Russian Mafia Heirs", "url": "/novels/bloodline-captive-russian-mafia-heirs/"}, {"author": "Unknown Author", "chapters": 43, "cover_url": "/covers/veilborn-wechat_2025-06-25_135222_698.png", "description": "An outcast mage holds the key to a dying veil between worlds. Hunted by those who crave her power, she must master forbidden magic to prevent reality\u2019s collapse\u2014or become the weapon that destroys it.", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance"], "title": "VEILBORN", "url": "/novels/veilborn/"}, {"author": "Unknown Author", "chapters": 39, "cover_url": "/covers/marked-by-the-enemy-wechat_2025-06-24_121834_842.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Marked by the Enemy", "url": "/novels/marked-by-the-enemy/"}, {"author": "Unknown Author", "chapters": 31, "cover_url": "/covers/bound-by-shadow-claimed-by-soul-wechat_2025-06-25_125716_153.png", "description": "Cursed to forget his mate, a werewolf Beta battles dark magic devouring his soul. As his human lover lies dying in a hidden sanctuary, their shattered bond ignites a race against time. To survive,...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["werewolf", "alpha", "pack"], "title": "Bound by Shadow, Claimed by Soul", "url": "/novels/bound-by-shadow-claimed-by-soul/"}, {"author": "Unknown Author", "chapters": 29, "cover_url": "/covers/psis-asylum-wechat_2025-06-25_131857_929.png", "description": "\"In a world where teen survivors of a deadly plague develop dangerous powers, 16-year-old Ruby hides her mind-control ability to survive a brutal camp. Rescued by rebels with dark secrets, she must...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Psi\u0027s Asylum", "url": "/novels/psis-asylum/"}, {"author": "Unknown Author", "chapters": 21, "cover_url": "/covers/lunas-twin-alphas-curse-of-the-blood-moon-wechat_2025-06-24_123211_426.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Luna\u2019s Twin Alphas Curse of the Blood Moon", "url": "/novels/lunas-twin-alphas-curse-of-the-blood-moon/"}, {"author": "Unknown Author", "chapters": 20, "cover_url": "/covers/lunas-divine-mark-wechat_2025-06-25_130743_740.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "Luna\u2019s Divine Mark", "url": "/novels/lunas-divine-mark/"}, {"author": "Unknown Author", "chapters": 10, "cover_url": "/covers/my-billionaire-wifes-deadly-affair-wechat_2025-09-18_145056_613.png", "description": "...", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "My Billionaire Wife\u2019s Deadly Affair", "url": "/novels/my-billionaire-wifes-deadly-affair/"}, {"author": "Unknown Author", "chapters": 9, "cover_url": "/covers/my-husband-sold-me-to-his-boss-wechat_2025-09-18_204220_834.png", "description": "My husband drugged me and sent me to his boss\u2019s hotel room\u2026 but what happened next was even CRAZIER", "last_updated": "2026-06-05", "progress": 0, "rating": 4.5, "tags": ["romance", "fantasy"], "title": "My Husband Sold Me to His Boss", "url": "/novels/my-husband-sold-me-to-his-boss/"}]
     </script>
 
     <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-about">
-                <div class="footer-logo">Good<span>Luck</span>Ark</div>
-                <p>GoodLuckArk is your destination for free romance and fantasy novels. We curate the best werewolf, billionaire CEO, and paranormal stories written for women who love captivating reads.</p>
-                <div class="footer-newsletter" style="margin-top:16px;">
-                    <p>Get weekly novel recommendations in your inbox:</p>
-                    <div class="footer-newsletter-form">
-                        <input type="email" placeholder="Your email address">
-                        <button type="button"><i class="fas fa-paper-plane"></i> Subscribe</button>
-                    </div>
-                </div>
+                <div class="footer-logo">GoodLuckArk</div>
+                <p>GoodLuckArk offers a wide selection of free novels for women. Discover new stories across various genres and enjoy reading anywhere, anytime.</p>
             </div>
             
             <div class="footer-links">
                 <h3>Quick Links</h3>
                 <ul>
-                    <li><a href="/about/"><i class="fas fa-info-circle"></i> About Us</a></li>
-                    <li><a href="/contact/"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li><a href="/privacy/"><i class="fas fa-shield-alt"></i> Privacy Policy</a></li>
-                    <li><a href="/terms/"><i class="fas fa-file-contract"></i> Terms of Service</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-links">
-                <h3>Genres</h3>
-                <ul>
-                    <li><a href="/category/werewolf/"><i class="fas fa-moon"></i> Werewolf Romance</a></li>
-                    <li><a href="/category/billionaire/"><i class="fas fa-briefcase"></i> Billionaire CEO</a></li>
-                    <li><a href="/category/fantasy/"><i class="fas fa-dragon"></i> Fantasy</a></li>
-                    <li><a href="/category/romance/"><i class="fas fa-heart"></i> Romance</a></li>
-                    <li><a href="/category/contemporary/"><i class="fas fa-city"></i> Contemporary</a></li>
+                    <li><a href="/about/">About Us</a></li>
+                    <li><a href="/contact/">Contact</a></li>
+                    <li><a href="/privacy/">Privacy Policy</a></li>
+                    <li><a href="/terms/">Terms of Service</a></li>
                 </ul>
             </div>
             
             <div class="footer-links">
                 <h3>Support</h3>
                 <ul>
-                    <li><a href="/help/"><i class="fas fa-question-circle"></i> Help Center</a></li>
-                    <li><a href="/faq/"><i class="fas fa-comments"></i> FAQ</a></li>
-                    <li><a href="/feedback/"><i class="fas fa-star"></i> Feedback</a></li>
-                    <li><a href="/report/"><i class="fas fa-flag"></i> Report Issue</a></li>
+                    <li><a href="/help/">Help Center</a></li>
+                    <li><a href="/faq/">FAQ</a></li>
+                    <li><a href="/feedback/">Feedback</a></li>
+                    <li><a href="/report/">Report Issue</a></li>
                 </ul>
-                <div style="margin-top:16px;">
-                    <p style="font-size:0.83rem;opacity:0.6;margin-bottom:10px;font-weight:600;color:white;">Follow Us</p>
-                    <div style="display:flex;gap:12px;">
-                        <a href="#" style="font-size:1.2rem;opacity:0.7;" title="Facebook"><i class="fab fa-facebook"></i></a>
-                        <a href="#" style="font-size:1.2rem;opacity:0.7;" title="Twitter/X"><i class="fab fa-twitter"></i></a>
-                        <a href="#" style="font-size:1.2rem;opacity:0.7;" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" style="font-size:1.2rem;opacity:0.7;" title="Pinterest"><i class="fab fa-pinterest"></i></a>
-                    </div>
-                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Connect With Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                </ul>
             </div>
         </div>
         
-        <div class="footer-bottom">
-            <div class="copyright">
-                &copy; 2025 GoodLuckArk. All rights reserved. Free novels for women, read online.
-            </div>
-            <div class="footer-bottom-links">
-                <a href="/privacy/">Privacy</a>
-                <a href="/terms/">Terms</a>
-                <a href="/sitemap.xml">Sitemap</a>
-                <a href="/contact/">Contact</a>
-            </div>
+        <div class="copyright">
+            <p>&copy; 2024 GoodLuckArk. All rights reserved.</p>
         </div>
     </footer>
 
@@ -1478,15 +1158,15 @@
         document.addEventListener('DOMContentLoaded', function() {
             const cards = document.querySelectorAll('.novel-card');
             cards.forEach((card, index) => {
-                card.style.animationDelay = `${index * 0.06}s`;
+                card.style.animationDelay = `${index * 0.1}s`;
             });
         });
+
         // Simple reading history simulation
         const historyItems = document.querySelectorAll('.history .novel-card');
         historyItems.forEach(item => {
             item.addEventListener('click', function() {
-                const titleEl = this.querySelector('.novel-title');
-                if (titleEl) console.log('Resuming:', titleEl.textContent);
+                alert('Continue reading from where you left off?');
             });
         });
 
@@ -1564,29 +1244,33 @@
             
             // 如果超过6小时没检查，或者是首次访问，则检查新内容
             if (!lastCheck || (currentTime - parseInt(lastCheck)) > 6 * 60 * 60 * 1000) {
+                // 检查页面上的小说数量
                 const novelCount = document.querySelectorAll('.novel-card').length;
                 const lastNovelCount = localStorage.getItem('lastNovelCount');
                 
                 if (lastNovelCount && parseInt(lastNovelCount) < novelCount) {
+                    // 发现新小说，显示提示
                     showNewContentNotification();
                 }
                 
+                // 更新记录
                 localStorage.setItem('lastContentCheck', currentTime.toString());
                 localStorage.setItem('lastNovelCount', novelCount.toString());
             }
         }
         
         function showNewContentNotification() {
+            // 创建一个温和的提示，不会干扰阅读历史
             const notification = document.createElement('div');
             notification.style.cssText = `
                 position: fixed;
-                top: 80px;
+                top: 20px;
                 right: 20px;
-                background: linear-gradient(135deg, #7c5cbf, #c0396b);
+                background: linear-gradient(135deg, #ff6b6b, #9c89b8);
                 color: white;
-                padding: 14px 20px;
-                border-radius: 10px;
-                box-shadow: 0 4px 16px rgba(124,92,191,0.3);
+                padding: 15px 20px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
                 z-index: 10000;
                 font-size: 14px;
                 cursor: pointer;
@@ -1595,7 +1279,7 @@
             notification.innerHTML = `
                 <div style="display: flex; align-items: center; gap: 10px;">
                     <i class="fas fa-sparkles" style="color: #ffeb3b;"></i>
-                    <span>New novels added!</span>
+                    <span>发现新小说！</span>
                     <i class="fas fa-times" style="margin-left: 10px; font-size: 12px; opacity: 0.7;"></i>
                 </div>
             `;
@@ -1630,34 +1314,44 @@
             });
         }
 
-        // Genre filter functionality
-        function filterByGenre(btn, genre) {
-            document.querySelectorAll('.genre-pills .pill').forEach(p => p.classList.remove('active'));
-            btn.classList.add('active');
-            const grid = document.getElementById('recommended-grid');
-            const cards = grid.querySelectorAll('.novel-card');
-            cards.forEach(card => {
-                if (genre === 'all') {
-                    card.style.display = '';
-                } else {
-                    const tags = Array.from(card.querySelectorAll('.tag')).map(t => t.textContent.trim().toLowerCase());
-                    card.style.display = tags.some(t => t.includes(genre)) ? '' : 'none';
+        // 强制获取最新首页内容（不清除缓存）
+        function ensureFreshContent() {
+            // 每次访问首页时，通过添加时间戳参数来绕过页面缓存
+            const urlParams = new URLSearchParams(window.location.search);
+            const refreshParam = urlParams.get('v');
+            const currentTime = new Date().getTime();
+            
+            // 如果没有版本参数，或版本参数过旧（超过1分钟），则刷新
+            if (!refreshParam || (currentTime - parseInt(refreshParam)) > 60000) {
+                const newUrl = window.location.pathname + '?v=' + currentTime;
+                if (window.location.href !== window.location.origin + newUrl) {
+                    window.history.replaceState({}, '', newUrl);
+                    window.location.reload();
                 }
-            });
+            }
         }
 
-        // Recommended For You - 全部展示
+        // Recommended For You - Read More 功能
         let allNovels = [];
+        let currentIndex = 8; // 已经显示了初始的8本
+        const batchSize = 8;
 
         function loadNovelsData() {
             try {
                 const dataElement = document.getElementById('novels-data');
                 if (dataElement && dataElement.textContent.trim()) {
                     allNovels = JSON.parse(dataElement.textContent);
+                    console.log('成功加载小说数据：', allNovels.length, '本');
+                    // 随机打乱小说顺序，但保持前8本不变（已经在模板中显示）
+                    const remainingNovels = allNovels.slice(8);
+                    shuffleArray(remainingNovels);
+                    allNovels = [...allNovels.slice(0, 8), ...remainingNovels];
                 } else {
+                    console.error('未找到小说数据或数据为空');
                     allNovels = [];
                 }
             } catch (error) {
+                console.error('加载小说数据时出错:', error);
                 allNovels = [];
             }
         }
@@ -1692,37 +1386,74 @@
             `;
         }
 
-        function initializeRecommendedSection() {
-            loadNovelsData();
+        function loadMoreRecommendedNovels() {
             const grid = document.getElementById('recommended-grid');
-            if (!grid || !allNovels.length) return;
-            // 清空已有的8个硬编码卡片，改为全部从数据渲染
-            grid.innerHTML = '';
-            allNovels.forEach(novel => {
-                grid.insertAdjacentHTML('beforeend', createNovelCard(novel));
-            });
-        }
-
-        function loadAllFeaturedNovels() {
-            // 加载所有小说数据
-            loadNovelsData();
+            const readMoreBtn = document.getElementById('read-more-btn');
+            const loadingIndicator = document.getElementById('loading-indicator');
             
-            const featuredGrid = document.getElementById('featured-grid');
-            if (!featuredGrid || !allNovels || allNovels.length === 0) {
-                console.error('无法加载Featured Novels：找不到容器或没有数据');
+            if (!grid || currentIndex >= allNovels.length) {
+                // 没有更多小说了，隐藏按钮
+                if (readMoreBtn) {
+                    readMoreBtn.style.display = 'none';
+                }
                 return;
             }
+
+            // 显示加载指示器，隐藏按钮
+            if (loadingIndicator) loadingIndicator.style.display = 'block';
+            if (readMoreBtn) readMoreBtn.disabled = true;
+
+            setTimeout(() => {
+                const endIndex = Math.min(currentIndex + batchSize, allNovels.length);
+                const batch = allNovels.slice(currentIndex, endIndex);
+                
+                batch.forEach(novel => {
+                    grid.insertAdjacentHTML('beforeend', createNovelCard(novel));
+                });
+                
+                currentIndex = endIndex;
+                
+                // 隐藏加载指示器
+                if (loadingIndicator) loadingIndicator.style.display = 'none';
+                
+                // 更新按钮状态
+                if (readMoreBtn) {
+                    readMoreBtn.disabled = false;
+                    if (currentIndex >= allNovels.length) {
+                        readMoreBtn.textContent = 'No More Novels';
+                        readMoreBtn.disabled = true;
+                        setTimeout(() => {
+                            readMoreBtn.style.display = 'none';
+                        }, 2000);
+                    }
+                }
+            }, 800); // 模拟加载延迟
+        }
+
+        function initializeRecommendedSection() {
+            loadNovelsData();
             
-            // 清空现有内容
-            featuredGrid.innerHTML = '';
-            
-            // 加载所有小说
-            allNovels.forEach(novel => {
-                const cardHTML = createNovelCard(novel);
-                featuredGrid.insertAdjacentHTML('beforeend', cardHTML);
-            });
-            
-            console.log('Featured Novels 加载完成：', allNovels.length, '本小说');
+            // 绑定Read More按钮事件
+            const readMoreBtn = document.getElementById('read-more-btn');
+            if (readMoreBtn) {
+                readMoreBtn.addEventListener('click', loadMoreRecommendedNovels);
+                
+                // 确保按钮可见（防止被其他逻辑隐藏）
+                readMoreBtn.style.display = 'inline-flex';
+                
+                // 延迟检查数据加载状态
+                setTimeout(() => {
+                    console.log('小说数据加载状态：', allNovels.length, '本小说');
+                    // 只有在确实没有更多小说时才隐藏按钮
+                    if (allNovels.length <= 8) {
+                        readMoreBtn.style.display = 'none';
+                        console.log('小说数量不足，隐藏Read More按钮');
+                    } else {
+                        readMoreBtn.style.display = 'inline-flex';
+                        console.log('显示Read More按钮，可加载更多小说');
+                    }
+                }, 200);
+            }
         }
 
         // 页面加载时初始化
@@ -1730,11 +1461,13 @@
             loadReadingHistory();
             checkForNewContent();
             
-            // 加载所有小说到 Featured Novels
-            loadAllFeaturedNovels();
-            
-            // 初始化推荐区域
+            // 初始化推荐区域（优先执行，避免被页面刷新中断）
             initializeRecommendedSection();
+            
+            // 确保获取最新内容（放在最后，避免影响其他功能）
+            setTimeout(() => {
+                ensureFreshContent();
+            }, 1000); // 延迟1秒执行，确保推荐区域已经初始化完成
         });
     </script>
 </body>
